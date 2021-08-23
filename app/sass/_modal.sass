@@ -1,0 +1,100 @@
+@import "fonts"
+@import "vars"
+
+//modal
+.modal__div
+  position: fixed
+  max-width: 1630px
+  width: 100%
+  height: 100%
+  top: 45%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 101
+  overflow: auto
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  display: none
+  opacity: 0
+
+.modal__wrapper
+  background: #2D2F34
+  border-radius: 20px
+  padding: 60px
+  width: 100%
+  height: auto
+  overflow: auto
+  margin: 50px auto
+  box-sizing: border-box
+  position: relative
+  .logo
+    font-size: 80px
+    font-weight: 800
+    color: $accent
+  h3
+    margin: 0 0 0 60px
+    font-size: 30px
+    font-weight: bold
+
+.modal-head
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5)
+
+.modal-body
+  padding: 30px 0 0
+  .row
+    margin: 0 -20px
+  .col-5
+    padding: 0 20px
+
+
+.modal__close
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 30px
+  height: 30px
+  fill: rgba(196, 196, 196, 0.8)
+  margin: 0 0 0 auto
+  cursor: pointer
+  transition: .3s ease
+  &:hover
+    fill: $accent
+
+
+.overlay
+  z-index: 100
+  position: fixed
+  background-color: #000
+  opacity: 0.9
+  -moz-opacity: 0.9
+  filter: alpha(opacity = 90)
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  cursor: pointer
+  display: none
+
+.category-box
+  h4
+    font-weight: bold
+    font-size: 30px
+    margin: 0 0 30px
+
+.list-category
+  font-size: 24px
+  font-weight: 500
+  li
+    margin: 0 0 25px
+    &:last-child
+      margin: 0
+    a
+      color: #fff
+      &:hover
+        color: $accent

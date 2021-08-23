@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>GAMESHERE</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header-top">
+    <div class="container">
+      <a href="index.html" class="logo">GamesHere</a>
+      <a href="catalog.html" class="btn btn-accent">Каталог игр</a>
+
+      <form method="post" class="form-search">
+        <label><input type="text" name="name" placeholder="Поиск игр в каталоге"></label>
+        <button type="submit" class='btn-search'>
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+
+      <div class="header-box">
+        <a href="#" class="header-link header-link-cabinet">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#user"></use>
+          </svg>
+        </a>
+        <a href="#" class="header-link header-link-basket">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#basket"></use>
+          </svg>
+        </a>
+
+        <div class="language-wrapper">
+          <select name="select" class="select">
+            <option value="RU">RU</option>
+            <option value="en">en</option>
+          </select>
+
+          <select name="select" class="select">
+            <option value="РУБ ₽">РУБ ₽</option>
+            <option value="USD $">USD $</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container">
+      <ul class="menu">
+        <li><a href="#">Steam</a></li>
+        <li><a href="#">Origin</a></li>
+        <li><a href="#">Uplay</a></li>
+        <li><a href="#">WOT</a></li>
+        <li><a href="#">Minecraft</a></li>
+        <li><a href="#">Fortnite</a></li>
+        <li><a href="#">Counter Strike</a></li>
+        <li><a href="#">Warface</a></li>
+        <li><a href="#">GTA 5</a></li>
+      </ul>
+      <a href="#modalCategory" class="links-category open_modal">
+        <span class="links-category__text">Все категории</span>
+        <span class="links-category__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#category"></use></svg></span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="home">
+  <div class="swiper-container main-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="main-slider-item">
+          <img src="img/slide1.png" alt="" class="main-slider-item__bg">
+          <div class="container">
+            <div class="main-slider-item__content">
+              <div class="main-slider-title">CYBERPUNK 2077</div>
+              <div class="author">
+                <p>От</p>
+                <p>Repak_by_4uvak</p>
+              </div>
+              <div class="main-slider-item__bottom">
+                <div class="price">1999 ₽</div>
+                <div class="sale">-10%</div>
+                <a href="#" class="btn btn-accent">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#basket"></use>
+                  </svg>
+                  <span class="btn-text">В корзину</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="main-slider-item">
+          <img src="img/slide2.png" alt="" class="main-slider-item__bg">
+          <div class="container">
+            <div class="main-slider-item__content">
+              <div class="main-slider-title">Sid Meier’s Civilization Beyond Earth</div>
+              <div class="author">
+                <p>От</p>
+                <p>Repak_by_4uvak</p>
+              </div>
+              <div class="main-slider-item__bottom">
+                <div class="price">1999 ₽</div>
+                <div class="sale">-10%</div>
+                <a href="#" class="btn btn-accent">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#basket"></use>
+                  </svg>
+                  <span class="btn-text">В корзину</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="main-slider-item">
+          <img src="img/slide1.png" alt="" class="main-slider-item__bg">
+          <div class="container">
+            <div class="main-slider-item__content">
+              <div class="main-slider-title">CYBERPUNK 2077</div>
+              <div class="author">
+                <p>От</p>
+                <p>Repak_by_4uvak</p>
+              </div>
+              <div class="main-slider-item__bottom">
+                <div class="price">1999 ₽</div>
+                <div class="sale">-10%</div>
+                <a href="#" class="btn btn-accent">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#basket"></use>
+                  </svg>
+                  <span class="btn-text">В корзину</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="main-slider-item">
+          <img src="img/slide1.png" alt="" class="main-slider-item__bg">
+          <div class="container">
+            <div class="main-slider-item__content">
+              <div class="main-slider-title">CYBERPUNK 2077</div>
+              <div class="author">
+                <p>От</p>
+                <p>Repak_by_4uvak</p>
+              </div>
+              <div class="main-slider-item__bottom">
+                <div class="price">1999 ₽</div>
+                <div class="sale">-10%</div>
+                <a href="#" class="btn btn-accent">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#basket"></use>
+                  </svg>
+                  <span class="btn-text">В корзину</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+</main>
+
+<div class="products-section m-40">
+  <div class="container">
+    <div class="tabs w-100">
+      <ul class="tabs__caption">
+        <li class="active">
+          <div class="tabs-icon">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#tab-icon1"></use>
+            </svg>
+          </div>
+          <div class="tabs-text">Свежее поступление</div>
+        </li>
+        <li>
+          <div class="tabs-icon">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#tab-icon2"></use>
+            </svg>
+          </div>
+          <div class="tabs-text"> Рекомендации</div>
+        </li>
+        <li>
+          <div class="tabs-icon">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#tab-icon3"></use>
+            </svg>
+          </div>
+          <div class="tabs-text">Сезонные скидки</div>
+        </li>
+        <li>
+          <div class="tabs-icon">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#tab-icon4"></use>
+            </svg>
+          </div>
+          <div class="tabs-text">Лидеры продаж</div>
+        </li>
+      </ul>
+      <div class="tabs__content active">
+        <div class="row">
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product1.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Resident evil 3</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product2.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Tom Clancy's Rainbow
+                  Six Siege
+                </a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">599 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product3.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Grand Theft Auto V:
+                  Premium Online Edition</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product4.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Kingdom Come: Deliverance</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product5.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Star Wars: Battlefront 2 (Classic, 2005)</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product1.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Resident evil 3</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product2.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Tom Clancy's Rainbow
+                  Six Siege
+                </a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">599 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product3.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Grand Theft Auto V:
+                  Premium Online Edition</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product4.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Kingdom Come: Deliverance</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product5.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Star Wars: Battlefront 2 (Classic, 2005)</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabs__content">
+        <div class="row">
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product1.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Resident evil 3</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product2.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Tom Clancy's Rainbow
+                  Six Siege
+                </a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">599 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product3.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Grand Theft Auto V:
+                  Premium Online Edition</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product4.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Kingdom Come: Deliverance</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product5.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Star Wars: Battlefront 2 (Classic, 2005)</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product1.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Resident evil 3</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product2.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Tom Clancy's Rainbow
+                  Six Siege
+                </a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">599 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product3.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Grand Theft Auto V:
+                  Premium Online Edition</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product4.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Kingdom Come: Deliverance</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product5.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Star Wars: Battlefront 2 (Classic, 2005)</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabs__content">
+        <div class="row">
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product1.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Resident evil 3</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product2.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Tom Clancy's Rainbow
+                  Six Siege
+                </a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">599 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product3.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Grand Theft Auto V:
+                  Premium Online Edition</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product4.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Kingdom Come: Deliverance</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product5.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Star Wars: Battlefront 2 (Classic, 2005)</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product1.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Resident evil 3</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product2.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Tom Clancy's Rainbow
+                  Six Siege
+                </a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">599 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product3.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Grand Theft Auto V:
+                  Premium Online Edition</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product4.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Kingdom Come: Deliverance</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product5.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Star Wars: Battlefront 2 (Classic, 2005)</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabs__content">
+        <div class="row">
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product1.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Resident evil 3</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product2.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Tom Clancy's Rainbow
+                  Six Siege
+                </a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">599 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product3.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Grand Theft Auto V:
+                  Premium Online Edition</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product4.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Kingdom Come: Deliverance</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product5.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Star Wars: Battlefront 2 (Classic, 2005)</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product1.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Resident evil 3</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product2.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Tom Clancy's Rainbow
+                  Six Siege
+                </a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">599 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product3.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Grand Theft Auto V:
+                  Premium Online Edition</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product4.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Kingdom Come: Deliverance</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 product-col">
+            <div class="product-card">
+              <a href="product.html" class="product-card__img"><img src="img/product5.png" alt="">
+                <span class="sale">-63%</span>
+              </a>
+              <div class="product-card__body">
+                <a href="#" class="product-card__title">Star Wars: Battlefront 2 (Classic, 2005)</a>
+                <div class="product-card__salesman">Продавец: UnlockOnline</div>
+                <div class="product-card__footer">
+                  <div class="price">1999 ₽</div>
+                  <a href="#" class="btn btn-accent">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="news">
+  <div class="container">
+    <h2>Последние новости</h2>
+
+    <div class="w-100">
+      <div class="row">
+        <div class="col-3 mb-40">
+          <div class="news-card">
+            <a href="#" class="news-card__img"><img src="img/new1.png" alt=""></a>
+            <div class="news-card__body">
+              <a href="#" class="news-card__title">XCOM: Chimera Squad</a>
+              <div class="news-card__date">08.04.2020</div>
+              <div class="box-text">
+                <p>Не знаю, как вам, а мне по душе неожиданные релизы. Пусть маркетологи и любители долгостроев со мной
+                  поспорят, но если проект способен заинтересовать с ...</p>
+              </div>
+              <a href="#" class="color-accent links-read">Читать далее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 mb-40">
+          <div class="news-card">
+            <a href="#" class="news-card__img"><img src="img/new2.png" alt=""></a>
+            <div class="news-card__body">
+              <a href="#" class="news-card__title">Sakura Wars</a>
+              <div class="news-card__date">01.04.2020</div>
+              <div class="box-text">
+                <p>Серия Sakura Wars существует с 1996 года, но за пределами Японии о ней слышали единицы. За все эти
+                  годы единственной частью серии, которую SEGA ...</p>
+              </div>
+              <a href="#" class="color-accent links-read">Читать далее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 mb-40">
+          <div class="news-card">
+            <a href="#" class="news-card__img"><img src="img/new3.png" alt=""></a>
+            <div class="news-card__body">
+              <a href="#" class="news-card__title">Alder's Blood</a>
+              <div class="news-card__date">08.04.2020</div>
+              <div class="box-text">
+                <p>Так уж получается, что многие последние релизы мне приходится описывать по заезженной схеме: такая-то
+                  игра встречается с такой-то и такой-то. Вы уж извините… </p>
+              </div>
+              <a href="#" class="color-accent links-read">Читать далее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-100">
+      <a href="#" class="color-white links-article">Читать все статьи >></a>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-box">
+        <a href="index.html" class="logo">GamesHere</a>
+        <div class="box-text">
+          <p>Этот сайт не был одобрен Корпорациями Valve, Ubisoft, Electronic Arts, Crytek, Blizzard, Wargaming и
+            другими, и не аффилирован с ними. Название
+            и логотипы данных корпораций являются товарными знаками
+            или зарегистрированными товарными знаками этих Корпораций в США, России и/или других странах. Все права
+            сохранены. Все названия продуктов, компаний и марок, логотипы и товарные знаки, как и содержимое продуктов
+            (игр и прочего) являются собственностью соответствующих владельцев.</p>
+        </div>
+      </div>
+
+      <ul class="footer-menu">
+        <li><a href="catalog.html">Каталог товаров</a></li>
+        <li><a href="#">Свежее поступление</a></li>
+        <li><a href="#">Рекомендации</a></li>
+        <li><a href="#">Сезонные скидки</a></li>
+        <li><a href="#">Лидеры продаж</a></li>
+        <li><a href="#">Покупателям</a></li>
+        <li><a href="#">Продавцам</a></li>
+        <li><a href="#">Правила</a></li>
+        <li><a href="#">Описание сервиса</a></li>
+        <li><a href="#" class="btn btn-accent">Как купить</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <ul class="payment">
+        <li><img src="img/mastercard.svg" alt=""></li>
+        <li><img src="img/ms-secure.svg" alt=""></li>
+        <li><img src="img/visa.svg" alt=""></li>
+        <li><img src="img/verifed-visa.svg" alt=""></li>
+        <li><img src="img/paypal.svg" alt=""></li>
+        <li><img src="img/webmoney.svg" alt=""></li>
+        <li><img src="img/yandex-money.svg" alt=""></li>
+        <li><img src="img/qiwi.svg" alt=""></li>
+      </ul>
+      <div class="copyright">GAMESHERE.BY © 2020</div>
+      <a href="#" class="developer">Разработка сайта: Tangata.by</a>
+    </div>
+  </div>
+</footer>
+
+<!--модалное окно-->
+<div class="modal__div" id="modalCategory">
+  <div class="modal__wrapper">
+    <div class="modal-head">
+      <a href="index.html" class="logo">GamesHere</a>
+      <h3>Все категории</h3>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="modal-body w-100">
+      <div class="row">
+        <div class="col-5">
+          <div class="category-box">
+            <h4>Аккаунты</h4>
+            <ul class="list-category">
+              <li><a href="#">Steam</a></li>
+              <li><a href="#">Origin</a></li>
+              <li><a href="#">Uplay</a></li>
+              <li><a href="#">Epic game store</a></li>
+              <li><a href="#">Wargaming GC</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="category-box">
+            <h4>Игры</h4>
+            <ul class="list-category">
+              <li><a href="#">Counter-Strike</a></li>
+              <li><a href="#">Minecraft</a></li>
+              <li><a href="#">Fortnite</a></li>
+              <li><a href="#">Warface</a></li>
+              <li><a href="#">GTA 5</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="category-box">
+            <h4>Подписка</h4>
+            <ul class="list-category">
+              <li><a href="#">Twitch</a></li>
+              <li><a href="#">Netflix</a></li>
+              <li><a href="#">PornHub</a></li>
+              <li><a href="#">Spotify</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="category-box">
+            <h4>Программы</h4>
+            <ul class="list-category">
+              <li><a href="#">Windows 10</a></li>
+              <li><a href="#">Kaspersky security</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="category-box">
+            <h4>Прочее</h4>
+            <ul class="list-category">
+              <li><a href="#">Цифровые товары</a></li>
+              <li><a href="#">Электронные книги</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Пoдлoжкa -->
+<div class="overlay"></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+@import "fonts"
+@import "vars"
+
+//footer
+footer
+  margin: 80px 0 0
+  background: #2D2F34
+  .container
+    align-items: center
+    justify-content: space-between
+
+.footer-top
+  padding: 60px 0 0
+
+
+.footer-box
+  max-width: 418px
+  width: 100%
+  .box-text
+    color: #F0F0F3
+    font-size: 10px
+    opacity: .8
+    line-height: 12px
+  .logo
+    color: $accent
+    margin: 0 0 15px
+
+.footer-menu
+  width: calc(100% - 418px)
+  padding: 0 0 29px
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+  text-align: center
+  font-size: 20px
+  &:before
+    content: ''
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 100%
+    background: rgba(255, 255, 255, 0.5)
+    height: 2px
+    border-radius: 20px
+  li
+    padding: 10px
+    width: 20%
+  a
+    color: #fff
+    &:hover
+      color: $accent
+  .btn
+    color: #2D2F34
+    font-size: 20px
+    font-weight: 600
+    width: 100%
+    height: 40px
+    &:hover
+      color: #2D2F34
+
+
+.footer-bottom
+  padding: 15px 0 60px
+
+.payment
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    margin: 0 30px 0 0
+    display: flex
+    align-items: center
+    &:last-child
+      margin: 0
+
+.copyright
+  margin: 0 30px 0 auto
+  font-size: 14px
+  color: #F0F0F3
+
+.developer
+  font-size: 14px
+  color: #F0F0F3
