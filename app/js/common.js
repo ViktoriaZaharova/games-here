@@ -1,3 +1,4 @@
+// slider
 const swiper = new Swiper('.main-slider', {
     // Optional parameters
     // direction: 'vertical',
@@ -10,6 +11,7 @@ const swiper = new Swiper('.main-slider', {
     },
 });
 
+// tabs
 $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
     $(this)
         .addClass('active').siblings().removeClass('active')
@@ -57,3 +59,82 @@ $(function () {
     });
 });
 //end
+
+// hover header box
+$(".js-tab-trigger").hover(function () {
+    var id = $(this).attr('data-tab'),
+        content = $('.js-tab-content[data-tab="'+ id +'"]');
+
+    $('.js-tab-trigger.active').removeClass('active'); // 1
+    $(this).addClass('active'); // 2
+
+    $('.js-tab-content.active').removeClass('active'); // 3
+    content.addClass('active'); // 4
+});
+
+// amount
+$('.down').on("click", function () {
+    let $input = $(this).parent().find('input');
+    let count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+});
+$('.up').on("click",function () {
+    let $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+});
+
+$('.btn-registration').on('click', function (e) {
+    e.preventDefault();
+    $('.cabinet-box-entrance').fadeOut();
+    $('.cabinet-box-registration').fadeIn();
+});
+
+$('.btn-entrance').on('click', function (e) {
+    e.preventDefault();
+    $('.cabinet-box-registration').fadeOut();
+    $('.cabinet-box-entrance').fadeIn();
+});
+
+// search mobile
+$('.btn-open-search').on('click', function () {
+    $('.form-search').fadeIn();
+    $('.search-result').fadeIn();
+});
+
+$(function () {
+    $('.form-search input').keydown(checkInput).keyup(checkInput);
+});
+
+function checkInput() {
+    if ($('.form-search input').val() === "") {
+        $('.search-result').css('display', 'none');
+    } else {
+        $('.search-result').css('display', 'block');
+    }
+}
+
+// load card
+$('.btn-load').on('click', function (e) {
+    e.preventDefault();
+    $(this).parents('.tabs__content').find('.product-col:hidden').slideDown();
+
+    var onBlock = $(this).parents('.tabs__content').find('.product-col:hidden').length;
+    if(onBlock <= 0) {
+        $(this).hide();
+    }
+});
+
+
+// событие увода мыши с блока
+// $(document).mouseout(function (e) { // событие  увода мыши
+//     var div = $(".js-tab-content"); // тут указываем ID элемента
+//     if (!div.is(e.target) // если увели мышку
+//         && div.has(e.target).length === 0) { // и не по его дочерним элементам
+//         div.removeClass('active');
+//     }
+// });

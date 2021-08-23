@@ -1,0 +1,71 @@
+@import "fonts"
+@import "vars"
+
+//search-result
+.search-result
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 2
+  background: rgba(0, 0, 0, 0.9)
+  padding: 222px 0 105px
+  display: none
+  transition: .3s ease
+
+.scroll-horizontal
+  width: 100%
+  overflow-x: auto
+  &::-webkit-scrollbar
+    width: 4px
+    height: 4px
+    border-radius: 20px
+  &::-webkit-scrollbar-track
+    background-color: #fff
+    border-radius: 20px
+  &::-webkit-scrollbar-track-piece
+    background-color: #000
+    border-radius: 20px
+  &::-webkit-scrollbar-thumb
+    background-color: #fff
+    border-radius: 20px
+  &::-webkit-scrollbar-corner
+    background-color: #000
+    border-radius: 20px
+  &::-webkit-resizer
+    background-color: #fff
+    border-radius: 20px
+
+
+.search-result-wrapper
+  display: flex
+  align-items: stretch
+
+  .product-card
+    min-width: 280px
+    max-width: 280px
+    width: 280px
+    height: 510px
+    margin: 0 30px 20px 0
+    border: 2px solid rgba(255, 255, 255, 0.2)
+      radius: 30px
+    background: #2B2A29
+    &__img
+      height: 380px
+
+    &__body
+      height: calc(100% - 380px)
+      padding: 0 20px 20px
+    .btn
+      font-size: 14px
+      .svg-icon
+        width: 12px
+        height: 12px
+        margin: 0 6px 0 0
+    &__title
+      font-size: 14px
+    &__salesman
+      font-size: 14px
+      margin: 10px auto auto
+    &__footer
+      margin: 5px 0 0

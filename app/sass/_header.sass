@@ -6,6 +6,8 @@ header
   background: $header-bg
   .logo
     margin: 0 100px 0 0
+  .btn
+    height: 60px
 
 .header
   position: absolute
@@ -22,7 +24,9 @@ header
 
 .header-bottom
   padding: 15px 0
-  border-top: 1px solid #fff
+  border-top: 1px solid rgba(255, 255, 255, 0.5)
+  position: relative
+  z-index: 2
   .container
     align-items: center
 
@@ -32,10 +36,11 @@ header
   flex-wrap: wrap
   font-size: 20px
   font-weight: 500
+  width: 100%
   li
     margin: 0 40px 0 0
     &:last-child
-      margin: 0
+      margin: 0 0 0 auto
     a
       color: #fff
       &:hover
@@ -45,10 +50,6 @@ header
 .links-category
   display: flex
   align-items: center
-  color: #fff
-  font-weight: 500
-  font-size: 20px
-  margin: 0 0 0 auto
   &:hover
     color: $accent
   &__icon
@@ -60,15 +61,48 @@ header
     height: 20px
     margin: 0 0 0 20px
 
-.form-search
-  position: relative
+.search-wrapper
   max-width: 500px
   width: 100%
   margin: 0 auto 0 30px
+
+.btn-open-search
+  display: none
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  width: 45px
+  height: 45px
+  border: 1px solid rgba(255, 255, 255, 0.5)
+  cursor: pointer
+  .svg-icon
+    width: 19px
+    height: 19px
+    fill: #fff
+
+.btn-burger
+  display: none
+  width: 45px
+  height: 45px
+  border: 1px solid rgba(255, 255, 255, 0.5)
+    radius: 50%
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  margin: 0 0 0 20px
+  .svg-icon
+    width: 19px
+    height: 19px
+    fill: #fff
+
+.form-search
+  position: relative
+  width: 100%
   &:hover
     input
       background: #fff
       font-weight: bold
+      color: #1C1C1C
       &::placeholder
         color: #1C1C1C
     button
@@ -79,8 +113,9 @@ header
       radius: 60px
     padding: 0 10px 0 80px
     background: transparent
-    color: #1C1C1C
+    color: #fff
     &::placeholder
+
       color: #fff
   button
     position: absolute
@@ -101,6 +136,9 @@ header
   display: flex
   align-items: center
   flex-wrap: wrap
+  >*
+    position: relative
+    z-index: 3
 
 .header-link
   display: flex
@@ -148,3 +186,29 @@ header
     &:last-child
       margin: 0
 
+.links-prev
+  display: flex
+  align-items: center
+  color: #fff
+  font-size: 24px
+  font-weight: bold
+  margin: 0 0 30px
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 20px 0 0
+    width: 45px
+    height: 45px
+    border: 1px solid rgba(255, 255, 255, 0.5)
+      radius: 50%
+    .svg-icon
+      width: 13px
+      height: 19px
+      fill: #fff
+  &:hover
+    border-color: $accent
+    color: $accent
+    .links-prev__icon
+      .svg-icon
+        fill: $accent

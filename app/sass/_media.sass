@@ -3,53 +3,448 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width: 1620px)
+  .col-5
+    width: 25%
 
+  .modal-body .col-5
+    width: 20%
+
+@media only screen and (max-width: 1580px)
+  header .logo
+    margin: 0 30px 0 0
+
+  .search-wrapper
+    max-width: 400px
+
+  .payment li
+    margin: 0 20px 0 0
+    height: 35px
+
+
+
+@media only screen and (max-width: 1420px)
+  .logo
+    font-size: 40px
+
+  .header-link
+    margin: 0 20px 0 0
+    width: 70px
+    height: 70px
+
+    .svg-icon
+      width: 25px
+      height: 25px
+
+  .select
+    font-size: 16px
+    height: 35px
+
+  .menu li
+    margin: 0 20px 0 0
+
+  .search-wrapper
+    max-width: 350px
+
+  .footer-menu, .footer-menu .btn
+    font-size: 16px
+
+  .footer-menu li
+    padding: 5px
+
+@media only screen and (max-width: 1340px)
+  .footer-bottom
+    padding: 20px 0 30px
+
+  .payment
+    justify-content: center
+    li
+      margin: 0 15px 0 0
+      height: 30px
+
+  .col-5
+    width: 33.3%
+
+@media only screen and (max-width: 1260px)
+  .payment
+    width: 100%
+    li
+      height: 40px
+
+  .copyright
+    margin: 30px auto 10px
+    width: 100%
+    text-align: center
+
+  .developer
+    margin: 0 auto
+
+  .footer-menu, .footer-menu .btn
+    font-size: 14px
+
+  .swiper-container .swiper-pagination-bullet
+    width: 68px
+
+  .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet
+    margin: 0 18px 0 0
+
+@media only screen and (max-width: 1200px)
+  .logo
+    font-size: 30px
+
+  .search-wrapper
+    max-width: 260px
+    margin: 0 auto 0 10px
+
+  .form-search
+    input
+      padding: 0 10px 0 46px
+      height: 40px
+      font-size: 14px
+
+    button
+      left: 15px
+      width: 16px
+      height: 16px
+
+  header
+    .btn
+      height: 40px
+
+  .btn
+    font-size: 16px
+
+  .menu
+    font-size: 18px
+
+  .links-category
+    font-size: 18px
+
+  .footer-box
+    max-width: 100%
+    .box-text
+      text-align: center
+      margin: 0 auto 20px
+    .logo
+      font-size: 36px
+      text-align: center
+      margin: 0 auto 20px
+      justify-content: center
+
+  .footer-menu
+    padding: 0
+    width: 100%
+    justify-content: center
+    li
+      margin: 0 0 20px
+      padding: 0
+
+  .payment
+    li
+      margin: 0 15px 15px 0
+      &:last-child
+        margin: 0 0 15px
+
+  .tabs__caption
+    margin: 0 0 45px
+    font-size: 16px
+    li
+      margin: 0 0 15px
+      padding: 20px 15px
+
+  .tabs-icon
+    width: 80px
+    height: 80px
+
+  .category-box
+    h4
+      font-size: 18px
+
+  .list-category
+    font-size: 16px
+
+  .modal__wrapper .logo
+    font-size: 50px
+
+  .modal__wrapper h3
+    font-size: 24px
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width: 1060px)
+  .menu
+    min-width: 1050px
 
+  .header-bottom
+    .container
+      overflow-x: auto
+
+  .col-3
+    width: 50%
+
+@media only screen and (max-width: 992px)
+  .header-box, .btn-catalog
+    display: none
+
+  .btn-burger, .btn-open-search
+    display: flex
+
+  .search-wrapper
+    max-width: none
+    width: auto
+    margin: 0 0 0 auto
+
+  .form-search
+    display: none
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translate(-50%,0)
+    z-index: 2
+    background: #fff
+    width: calc(100% - 30px)
+    border-radius: 60px
+    overflow: hidden
+    input
+      border: 2px solid #FFFFFF
+
+      font-size: 12px
+      font-weight: bold
+      color: #1C1C1C
+      &::placeholder
+        color: #1C1C1C
+    button
+      fill: #2B2A29
+
+  .header-top
+    padding: 15px 0
+
+  .footer-menu li
+    width: 50%
+    a
+      text-align: left
+    .btn
+      background: transparent
+      padding: 0
+      height: auto
+      color: #FFC608
+      justify-content: flex-start
+      &:hover
+        color: #FFC608
+
+  .footer-top
+    padding: 20px 0 0
+
+  .links-article
+    font-size: 20px
+
+  .tabs__caption
+    font-size: 16px
+
+  .tabs-icon
+    width: 60px
+    height: 60px
+    margin: 0 auto 15px
+
+  .col-5
+    width: 50%
+
+  .main-slider-item
+    min-height: 640px
+    max-height: 640px
+    padding: 127px 0 106px
+    display: flex
+    flex-direction: column
+
+  .main-slider .container
+    height: 100%
+    margin: auto auto 0
+
+  .main-slider-title
+    font-size: 40px
+
+  .author
+    font-size: 30px
+
+  .swiper-container .swiper-pagination
+    bottom: 40px
+    justify-content: center
+    
+  .price
+    font-size: 30px
+    margin: 0 15px 0 0
+
+  .sale
+    margin: 0 15px 0 0
+    width: 40px
+    height: 40px
+    font-size: 14px
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+@media only screen and (max-width: 768px)
+  .col-3
+    width: 100%
 
+  .mb-40
+    margin-bottom: 20px
+
+  .tabs__caption
+    font-size: 14px
+    li
+      width: 49%
+      border-radius: 10px
+
+  .modal-body .col-5
+    width: 50%
+
+  .category-box
+    margin: 0 0 20px
+    h4
+      margin: 0 0 20px
+
+  .list-category
+    li
+      margin: 0 0 10px
+
+
+  .modal__wrapper
+    padding: 30px
+
+  .modal__wrapper .logo
+    font-size: 40px
+
+  .main-slider-title
+    font-size: 30px
+
+  .author
+    margin: 0 0 15px
+    font-size: 24px
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width: 640px)
+  .product-card
+    height: 300px
+    margin: 0 0 20px
+    border-radius: 10px
+    &__img
+      height: 190px
+    &__body
+      height: calc(100% - 190px)
+      padding: 10px
+    .btn
+      width: 50px
+      height: 30px
+      padding: 0
+      border-radius: 5px
+      .btn-text
+        display: none
+      .svg-icon
+        width: 18px
+        height: 18px
+        margin: 0
+    &__title
+      font-size: 10px
+    &__salesman
+      font-size: 10px
+    .price
+      font-size: 18px
+    .sale
+      width: 30px
+      height: 30px
+      font-size: 10px
+      right: 10px
+      bottom: 20px
+
+  .modal__wrapper .logo
+    width: 100%
+    justify-content: center
+    margin: 0 auto 10px
+
+  .modal__wrapper h3
+    margin: 0 auto
+
+  .modal__wrapper
+    padding: 40px 30px
+
+
+  .modal__close
+    position: absolute
+    right: 20px
+    top: 20px
+    width: 20px
+    height: 20px
+
+  .modal-head
+    padding: 0 0 10px
+
+  .btn
+    font-size: 14px
+    height: 40px
+
+  main .btn
+    height: 40px
+
+@media only screen and (max-width: 576px)
+  .logo
+    font-size: 26px
+    margin: 0
+
+  header
+    .logo
+      margin: 0
+
+  .footer-menu
+    font-size: 12px
+
+  .copyright
+    margin: 10px auto
+
+  footer
+    margin: 60px 0 0
+
+  .news-card
+    padding: 0
+    &__body
+      height: calc(100% - 185px)
+      padding: 15px 20px 20px
+    &__img
+      height: 185px
+      border-radius: 20px 20px 0px 0px
+    &__title
+      font-size: 20px
+    .box-text
+      font-size: 14px
+      margin: 0 0 10px
+    &__date
+      margin: 10px 0
+
+  h2
+    font-size: 20px
+    margin: 0 auto 20px
+
+  .links-article
+    font-size: 16px
+
+
+  .d-mobile
+    display: block
+
+  .product-col
+    display: none
+    &:nth-child(-n+4)
+      display: block
+
+  .main-slider-item__bg
+    min-width: 1160px
+    left: -160px
+
+@media only screen and (max-width: 480px)
+  /**/
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width: 350px)
+  .product-card
+    height: 320px
 
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-
+  main .btn
+    margin: 10px 0 0
