@@ -196,6 +196,10 @@ button
   padding: 0 10px
   width: 20%
 
+.col-4
+  width: 25%
+  padding: 0 10px
+
 .col-3
   width: 33.3%
 
@@ -210,7 +214,7 @@ button
   color: #fff
 
 h1
-  font-size: 60px
+  font-size: 40px
   font-weight: 600
   text-align: center
   margin: 0 auto 40px
@@ -267,6 +271,23 @@ h2
 .flex-wrap
   flex-wrap: wrap
 
+.breadcrumb
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-family: 'MyriadPro', sans-serif
+  color: $accent
+  font-size: 16px
+  line-height: 19px
+  li
+    a
+      display: flex
+      align-items: center
+      color: #fff
+      &:after
+        content: '/'
+        display: inline-block
+        margin: 0 3px
 
 //main
 main
@@ -495,6 +516,9 @@ main
     font-weight: 600
     height: 40px
     padding: 0 20px
+    .svg-icon
+      width: 16px
+      height: 15px
 
 //.news
 .news
@@ -573,5 +597,6 @@ main
 @import "search"
 @import "page"
 @import "basket"
+@import "catalog"
 @import "media"
 // Всегда в конце
