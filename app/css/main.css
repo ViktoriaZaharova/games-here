@@ -234,6 +234,12 @@ button {
   text-transform: uppercase;
   color: #fff; }
 
+h1 {
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto 40px; }
+
 h2 {
   text-align: center;
   width: 100%;
@@ -273,13 +279,20 @@ h2 {
   font-size: 14px;
   color: #2B2A29; }
 
+.d-inline {
+  display: inline-block; }
+
+.text-decoration {
+  text-decoration: underline; }
+
 main .btn {
-  height: 60px; }
+  height: 60px;
+  margin: 0; }
 
 .main-slider {
   position: relative; }
   .main-slider .container {
-    height: 100vh; }
+    margin: auto 0 0; }
 
 .swiper-container .swiper-pagination {
   position: absolute;
@@ -333,7 +346,14 @@ main .btn {
   padding: 182px 0 113px;
   min-height: 940px;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   .main-slider-item:after {
     content: '';
     position: absolute;
@@ -612,6 +632,32 @@ main .btn {
   font-weight: 600;
   margin: auto 0 0; }
 
+.basket-fixed {
+  position: fixed;
+  z-index: 5;
+  width: 55px;
+  height: 55px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-box-shadow: 0px 4px 50px #FFC608;
+          box-shadow: 0px 4px 50px #FFC608;
+  border: 2px solid #FFFFFF;
+    border-radius: 50%;
+  background: #FFC608; }
+  .basket-fixed .svg-icon {
+    fill: #2B2A29;
+    width: 25px;
+    height: 25px; }
+
 @font-face {
   font-family: "EarthOrbiterExtra";
   font-weight: 700;
@@ -620,7 +666,9 @@ main .btn {
   src: url("../fonts/EarthOrbiterExtra-Bold/EarthOrbiterExtra-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/EarthOrbiterExtra-Bold/EarthOrbiterExtra-Bold.woff") format("woff"), url("../fonts/EarthOrbiterExtra-Bold/EarthOrbiterExtra-Bold.ttf") format("truetype"); }
 
 header {
-  background: #2D2F34; }
+  background: #2D2F34;
+  z-index: 5;
+  position: relative; }
   header .logo {
     margin: 0 100px 0 0; }
   header .btn {
@@ -631,7 +679,6 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 2;
   background: transparent; }
 
 .header-top {
@@ -696,10 +743,9 @@ header {
     height: 20px;
     margin: 0 0 0 20px; }
 
-.search-wrapper {
-  max-width: 500px;
-  width: 100%;
-  margin: 0 auto 0 30px; }
+.form-search-mobile {
+  display: none;
+  z-index: 6; }
 
 .btn-open-search {
   display: none;
@@ -740,7 +786,9 @@ header {
 
 .form-search {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 0 30px; }
   .form-search:hover input {
     background: #fff;
     font-weight: bold;
@@ -828,12 +876,17 @@ header {
   .header-link:hover {
     border: 4px solid #FFFFFF; }
 
-.header-link-cabinet:before {
+.added-product:before {
   content: '';
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0); }
+          transform: translate(-50%, 0);
+  background: #FFC608;
+  width: 30px;
+  height: 5px;
+  border-radius: 20px;
+  bottom: 15px; }
 
 .select {
   width: 120px;
@@ -1101,7 +1154,7 @@ footer {
     fill: #FFC608; }
 
 .overlay {
-  z-index: 100;
+  z-index: 5;
   position: fixed;
   background-color: #000;
   opacity: 0.9;
@@ -1421,14 +1474,21 @@ footer {
 
 .cabinet-box {
   width: 100%;
-  margin: 0 auto 40px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 25px 30px; }
   .cabinet-box__title {
     width: 100%;
     padding: 0 0 20px;
-    position: relative; }
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .cabinet-box__title .name-user {
+      font-size: 16px; }
     .cabinet-box__title:before {
       content: '';
       position: absolute;
@@ -1443,7 +1503,8 @@ footer {
   .cabinet-box__footer {
     text-align: center;
     font-size: 18px;
-    font-weight: 500; }
+    font-weight: 500;
+    margin: 40px auto 0; }
     .cabinet-box__footer .btn {
       margin: 14px auto 0; }
 
@@ -1496,6 +1557,48 @@ footer {
 .cabinet-box-registration {
   display: none; }
 
+.avatar-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  margin: 0 10px 0 0; }
+  .avatar-user img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.btn-exit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  fill: #fff;
+  width: 50px;
+  height: 50px;
+  margin: 0 0 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%; }
+  .btn-exit .svg-icon {
+    width: 30px;
+    height: 30px; }
+
 @font-face {
   font-family: "EarthOrbiterExtra";
   font-weight: 700;
@@ -1508,12 +1611,12 @@ footer {
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 2;
-  background: rgba(0, 0, 0, 0.9);
+  z-index: 5;
   padding: 222px 0 105px;
   display: none;
   -webkit-transition: .3s ease;
-  transition: .3s ease; }
+  transition: .3s ease;
+  background: rgba(0, 0, 0, 0.9); }
 
 .scroll-horizontal {
   width: 100%;
@@ -1573,6 +1676,167 @@ footer {
     .search-result-wrapper .product-card__footer {
       margin: 5px 0 0; }
 
+.menu-cabinet {
+  width: 100%;
+  font-weight: 500; }
+  .menu-cabinet li {
+    margin: 0 0 25px; }
+    .menu-cabinet li:last-child {
+      margin: 0; }
+  .menu-cabinet-links {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #fff; }
+    .menu-cabinet-links__icon {
+      margin: 0 20px 0 0;
+      min-width: 20px;
+      width: 20px;
+      height: 20px;
+      fill: #ffffff; }
+    .menu-cabinet-links .f-none {
+      fill: none;
+      stroke: #fff;
+      stroke-width: 2px; }
+    .menu-cabinet-links:hover {
+      color: #FFC608; }
+
+@font-face {
+  font-family: "EarthOrbiterExtra";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/EarthOrbiterExtra-Bold/EarthOrbiterExtra-Bold.eot");
+  src: url("../fonts/EarthOrbiterExtra-Bold/EarthOrbiterExtra-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/EarthOrbiterExtra-Bold/EarthOrbiterExtra-Bold.woff") format("woff"), url("../fonts/EarthOrbiterExtra-Bold/EarthOrbiterExtra-Bold.ttf") format("truetype"); }
+
+.page-section {
+  padding: 40px 0 0; }
+
+.page-404 {
+  margin: 40px 0 0; }
+  .page-404 .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .page-404__img {
+    max-width: 504px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .page-404__content {
+    width: calc(100% - 504px);
+    padding: 0 23px 0 0;
+    text-align: center; }
+    .page-404__content h4 {
+      font-size: 30px;
+      font-weight: 600; }
+  .page-404 .btn {
+    margin: 0 auto; }
+
+.page-500 {
+  margin: 80px 0 40px; }
+  .page-500 .page-404__img {
+    max-width: 696px; }
+  .page-500 .page-404__content {
+    padding: 0 134px 0 0;
+    width: calc(100% - 696px); }
+
+@font-face {
+  font-family: "EarthOrbiterExtra";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/EarthOrbiterExtra-Bold/EarthOrbiterExtra-Bold.eot");
+  src: url("../fonts/EarthOrbiterExtra-Bold/EarthOrbiterExtra-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/EarthOrbiterExtra-Bold/EarthOrbiterExtra-Bold.woff") format("woff"), url("../fonts/EarthOrbiterExtra-Bold/EarthOrbiterExtra-Bold.ttf") format("truetype"); }
+
+.agreement {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 60px 0 0; }
+  .agreement .box-text {
+    max-width: 955px;
+    width: 100%;
+    margin: 0 auto; }
+
+.form-basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .form-basket__title {
+    padding: 0 30px 20px; }
+  .form-basket h3 {
+    font-size: 24px;
+    font-weight: 600; }
+  .form-basket .btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+  .form-basket label {
+    margin: 0; }
+  .form-basket .basket-card {
+    max-width: 551px; }
+  .form-basket .amount input {
+    border: none;
+    padding: 0; }
+  .form-basket .scroll-vertical::-webkit-scrollbar-track-piece, .form-basket .scroll-vertical::-webkit-scrollbar-corner {
+    background: #2D2F34; }
+  .form-basket .basket-card__img {
+    width: 100px; }
+  .form-basket .basket-card__body {
+    width: calc(100% - 100px); }
+
+.form-basket-products {
+  max-width: 635px;
+  width: 100%; }
+
+.form-basket-payments {
+  width: calc(100% - 635px);
+  padding: 0 0 40px; }
+
+.form-basket__total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px; }
+  .form-basket__total .total-sum {
+    width: auto; }
+  .form-basket__total .sum-val {
+    margin: 0 0 0 15px;
+    font-weight: bold; }
+  .form-basket__total .btn {
+    margin: 0 0 0 auto; }
+
+.form-basket__body {
+  background: #2D2F34;
+  border-radius: 20px;
+  width: 100%;
+  padding: 20px 30px; }
+
+.confirmation {
+  margin: 30px 0 0; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1620px) {
@@ -1584,7 +1848,7 @@ footer {
 @media only screen and (max-width: 1580px) {
   header .logo {
     margin: 0 30px 0 0; }
-  .search-wrapper {
+  .form-search {
     max-width: 400px; }
   .payment li {
     margin: 0 20px 0 0;
@@ -1605,7 +1869,7 @@ footer {
     height: 35px; }
   .menu li {
     margin: 0 20px 0 0; }
-  .search-wrapper {
+  .form-search {
     max-width: 350px; }
   .footer-menu, .footer-menu .btn {
     font-size: 16px; }
@@ -1623,7 +1887,9 @@ footer {
       margin: 0 15px 0 0;
       height: 30px; }
   .col-5 {
-    width: 33.3%; } }
+    width: 33.3%; }
+  .added-product:before {
+    bottom: 10px; } }
 
 @media only screen and (max-width: 1260px) {
   .payment {
@@ -1646,17 +1912,17 @@ footer {
 @media only screen and (max-width: 1200px) {
   .logo {
     font-size: 30px; }
-  .search-wrapper {
+  .form-search {
     max-width: 260px;
     margin: 0 auto 0 10px; }
-  .form-search input {
-    padding: 0 10px 0 46px;
-    height: 40px;
-    font-size: 14px; }
-  .form-search button {
-    left: 15px;
-    width: 16px;
-    height: 16px; }
+    .form-search input {
+      padding: 0 10px 0 46px;
+      height: 40px;
+      font-size: 14px; }
+    .form-search button {
+      left: 15px;
+      width: 16px;
+      height: 16px; }
   header .btn {
     height: 40px; }
   .btn {
@@ -1706,54 +1972,67 @@ footer {
   .modal__wrapper .logo {
     font-size: 50px; }
   .modal__wrapper h3 {
-    font-size: 24px; } }
+    font-size: 24px; }
+  h1 {
+    font-size: 40px; }
+  .page-404 h4 {
+    font-size: 20px; }
+  .page-500 .page-404__content {
+    width: calc(100% - 400px);
+    padding: 0 40px 0 0; }
+  .page-500 .page-404__img {
+    max-width: 400px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1060px) {
   .menu {
     min-width: 1050px; }
   .header-bottom .container {
-    overflow-x: auto; }
+    overflow-x: auto;
+    padding: 0 15px 15px; }
   .col-3 {
     width: 50%; } }
 
 @media only screen and (max-width: 992px) {
+  header .logo {
+    margin: 0 auto 0 0; }
+  .search-result {
+    z-index: 6;
+    background: transparent; }
   .header-box, .btn-catalog {
     display: none; }
   .btn-burger, .btn-open-search {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  .search-wrapper {
-    max-width: none;
-    width: auto;
-    margin: 0 0 0 auto; }
   .form-search {
-    display: none;
+    display: none; }
+  .form-search-mobile {
+    max-width: none;
+    margin: 0 0 0 auto;
     position: absolute;
-    top: 0;
+    top: 15px;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
-    z-index: 2;
     background: #fff;
     width: calc(100% - 30px);
     border-radius: 60px;
     overflow: hidden; }
-    .form-search input {
+    .form-search-mobile input {
       border: 2px solid #FFFFFF;
       font-size: 12px;
       font-weight: bold;
       color: #1C1C1C; }
-      .form-search input::-webkit-input-placeholder {
+      .form-search-mobile input::-webkit-input-placeholder {
         color: #1C1C1C; }
-      .form-search input::-moz-placeholder {
+      .form-search-mobile input::-moz-placeholder {
         color: #1C1C1C; }
-      .form-search input::-ms-input-placeholder {
+      .form-search-mobile input::-ms-input-placeholder {
         color: #1C1C1C; }
-      .form-search input::placeholder {
+      .form-search-mobile input::placeholder {
         color: #1C1C1C; }
-    .form-search button {
+    .form-search-mobile button {
       fill: #2B2A29; }
   .header-top {
     padding: 15px 0; }
@@ -1813,7 +2092,20 @@ footer {
     margin: 0 15px 0 0;
     width: 40px;
     height: 40px;
-    font-size: 14px; } }
+    font-size: 14px; }
+  .search-result {
+    height: 100%;
+    padding: 150px 0; }
+  .page-404__img {
+    max-width: 400px; }
+  .page-404__content {
+    width: calc(100% - 400px); }
+  h1 {
+    font-size: 30px; }
+  .basket-fixed {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -1842,7 +2134,16 @@ footer {
     font-size: 30px; }
   .author {
     margin: 0 0 15px;
-    font-size: 24px; } }
+    font-size: 24px; }
+  .page-404__content {
+    width: 100%;
+    padding: 0; }
+  .page-404__img {
+    margin: 30px auto 0;
+    max-width: 300px; }
+  .page-500 .page-404__content {
+    padding: 0;
+    width: 100%; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 640px) {
@@ -1906,8 +2207,6 @@ footer {
   .logo {
     font-size: 26px;
     margin: 0; }
-  header .logo {
-    margin: 0; }
   .footer-menu {
     font-size: 12px; }
   .copyright {
@@ -1921,7 +2220,7 @@ footer {
       padding: 15px 20px 20px; }
     .news-card__img {
       height: 185px;
-      border-radius: 20px 20px 0px 0px; }
+      border-radius: 20px 20px 0 0; }
     .news-card__title {
       font-size: 20px; }
     .news-card .box-text {
@@ -1942,7 +2241,41 @@ footer {
       display: block; }
   .main-slider-item__bg {
     min-width: 1160px;
-    left: -160px; } }
+    left: -160px; }
+  .search-result {
+    padding: 75px 0; }
+  .search-result-wrapper .product-card {
+    min-width: 155px;
+    max-width: 155px;
+    height: 300px;
+    margin: 0 10px 10px 0;
+    border-radius: 10px; }
+    .search-result-wrapper .product-card__img {
+      height: 190px; }
+    .search-result-wrapper .product-card__body {
+      height: calc(100% - 190px);
+      padding: 10px; }
+    .search-result-wrapper .product-card__salesman {
+      font-size: 10px; }
+    .search-result-wrapper .product-card__title {
+      font-size: 10px;
+      max-height: 26px;
+      overflow: hidden; }
+  .links-prev {
+    margin: 0 0 20px;
+    font-size: 20px; }
+  .links-prev__icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 15px 0 0; }
+    .links-prev__icon .svg-icon {
+      width: 8px;
+      height: 12px; }
+  .page-404 {
+    margin: 0; }
+  h1 {
+    font-size: 26px;
+    margin: 0 auto 20px; } }
 
 @media only screen and (max-width: 480px) {
   /**/ }

@@ -7,11 +7,11 @@
   left: 0
   top: 0
   width: 100%
-  z-index: 2
-  background: rgba(0, 0, 0, 0.9)
+  z-index: 5
   padding: 222px 0 105px
   display: none
   transition: .3s ease
+  background: rgba(0, 0, 0, 0.9)
 
 .scroll-horizontal
   width: 100%
@@ -69,3 +69,28 @@
       margin: 10px auto auto
     &__footer
       margin: 5px 0 0
+
+.menu-cabinet
+  width: 100%
+  font-weight: 500
+  li
+    margin: 0 0 25px
+    &:last-child
+      margin: 0
+  &-links
+    width: 100%
+    display: flex
+    align-items: center
+    color: #fff
+    &__icon
+      margin: 0 20px 0 0
+      min-width: 20px
+      width: 20px
+      height: 20px
+      fill: #ffffff
+    .f-none
+      fill: none
+      stroke: #fff
+      stroke-width: 2px
+    &:hover
+      color: $accent

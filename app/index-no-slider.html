@@ -201,7 +201,7 @@
 </form>
 
 
-<header class="header">
+<header>
   <div class="header-top">
     <div class="container">
       <a href="index.html" class="logo">GamesHere</a>
@@ -229,7 +229,7 @@
             <use xlink:href="img/sprite.svg#user"></use>
           </svg>
         </a>
-        <a href="basket.html" class="header-link header-link-basket js-tab-trigger" data-tab="tab1">
+        <a href="basket.html" class="header-link header-link-basket js-tab-trigger added-product" data-tab="tab1">
           <svg class="svg-icon">
             <use xlink:href="img/sprite.svg#basket"></use>
           </svg>
@@ -360,24 +360,39 @@
             <div class="cabinet-box-wrapper cabinet-box-entrance">
               <div class="cabinet-box">
                 <div class="cabinet-box__title">
-                  <h3>Вход в личный кабинет</h3>
+                  <div class="avatar-user"><img src="img/avatar.png" alt=""></div>
+                  <h3 class="name-user">N4gib4tT0R_2016</h3>
+                  <a href="#" class="btn-exit"><svg class="svg-icon"><use xlink:href="img/sprite.svg#exit"></use></svg></a>
                 </div>
 
                 <div class="cabinet-box__body">
-                  <form method="post" class="form-cabinet">
-                    <label>
-                      <input type="text" placeholder="Введите E-mail" name="mail">
-                    </label>
-                    <label><input type="text" placeholder="Введите пароль" name="password"></label>
-                    <a href="#" class="color-grey links-form">Забыли пароль?</a>
-                    <button type="submit" class="btn btn-accent">Войти в кабинет</button>
-                  </form>
+                  <ul class="menu-cabinet">
+                    <li>
+                      <a href="#" class="menu-cabinet-links">
+                        <svg class="menu-cabinet-links__icon svg-icon f-none"><use xlink:href="img/sprite.svg#heart"></use></svg>
+                        <span class="menu-cabinet-links__text">Избранное</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="menu-cabinet-links">
+                        <svg class="menu-cabinet-links__icon svg-icon"><use xlink:href="img/sprite.svg#clock"></use></svg>
+                        <span class="menu-cabinet-links__text">История покупок</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="menu-cabinet-links">
+                        <svg class="menu-cabinet-links__icon svg-icon"><use xlink:href="img/sprite.svg#notification"></use></svg>
+                        <span class="menu-cabinet-links__text">В ожидании</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="menu-cabinet-links">
+                        <svg class="menu-cabinet-links__icon svg-icon"><use xlink:href="img/sprite.svg#question"></use></svg>
+                        <span class="menu-cabinet-links__text">Как купить игру</span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-              </div>
-
-              <div class="cabinet-box__footer">
-                <p>Первый раз здесь?</p>
-                <a href="#" class="btn btn-white btn-registration">Зарегистрироваться</a>
               </div>
             </div>
 
@@ -455,110 +470,6 @@
   </div>
 </header>
 
-<main class="home">
-  <div class="swiper-container main-slider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="main-slider-item">
-          <img src="img/slide1.png" alt="" class="main-slider-item__bg">
-          <div class="container">
-            <div class="main-slider-item__content">
-              <div class="main-slider-title">CYBERPUNK 2077</div>
-              <div class="author">
-                <p>От</p>
-                <p>Repak_by_4uvak</p>
-              </div>
-              <div class="main-slider-item__bottom">
-                <div class="price">1999 ₽</div>
-                <div class="sale">-10%</div>
-                <a href="#" class="btn btn-accent">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#basket"></use>
-                  </svg>
-                  <span class="btn-text">В корзину</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="main-slider-item">
-          <img src="img/slide2.png" alt="" class="main-slider-item__bg">
-          <div class="container">
-            <div class="main-slider-item__content">
-              <div class="main-slider-title">Sid Meier’s Civilization Beyond Earth</div>
-              <div class="author">
-                <p>От</p>
-                <p>Repak_by_4uvak</p>
-              </div>
-              <div class="main-slider-item__bottom">
-                <div class="price">1999 ₽</div>
-                <div class="sale">-10%</div>
-                <a href="#" class="btn btn-accent">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#basket"></use>
-                  </svg>
-                  <span class="btn-text">В корзину</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="main-slider-item">
-          <img src="img/slide1.png" alt="" class="main-slider-item__bg">
-          <div class="container">
-            <div class="main-slider-item__content">
-              <div class="main-slider-title">CYBERPUNK 2077</div>
-              <div class="author">
-                <p>От</p>
-                <p>Repak_by_4uvak</p>
-              </div>
-              <div class="main-slider-item__bottom">
-                <div class="price">1999 ₽</div>
-                <div class="sale">-10%</div>
-                <a href="#" class="btn btn-accent">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#basket"></use>
-                  </svg>
-                  <span class="btn-text">В корзину</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="main-slider-item">
-          <img src="img/slide1.png" alt="" class="main-slider-item__bg">
-          <div class="container">
-            <div class="main-slider-item__content">
-              <div class="main-slider-title">CYBERPUNK 2077</div>
-              <div class="author">
-                <p>От</p>
-                <p>Repak_by_4uvak</p>
-              </div>
-              <div class="main-slider-item__bottom">
-                <div class="price">1999 ₽</div>
-                <div class="sale">-10%</div>
-                <a href="#" class="btn btn-accent">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#basket"></use>
-                  </svg>
-                  <span class="btn-text">В корзину</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="swiper-pagination"></div>
-  </div>
-</main>
 
 <div class="products-section m-40">
   <div class="container">

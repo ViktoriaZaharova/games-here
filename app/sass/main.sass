@@ -203,6 +203,12 @@ button
   text-transform: uppercase
   color: #fff
 
+h1
+  font-size: 60px
+  font-weight: 600
+  text-align: center
+  margin: 0 auto 40px
+
 h2
   text-align: center
   width: 100%
@@ -240,15 +246,22 @@ h2
   font-size: 14px
   color: #2B2A29
 
+.d-inline
+  display: inline-block
+
+.text-decoration
+  text-decoration: underline
+
 //main
 main
   .btn
     height: 60px
+    margin: 0
 
 .main-slider
   position: relative
   .container
-    height: 100vh
+    margin: auto 0 0
 
 .swiper-container
   .swiper-pagination
@@ -280,8 +293,6 @@ main
     height: 10px
 
 
-
-
 .main-slider-item__bg
   width: 100%
   position: absolute
@@ -296,6 +307,9 @@ main
   min-height: 940px
   position: relative
   z-index: 1
+  display: flex
+  flex-direction: column
+
   &:after
     content: ''
     position: absolute
@@ -305,6 +319,7 @@ main
     height: 100%
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 37.67%, rgba(0, 0, 0, 0.8) 78.43%, #1F2023 100%)
     z-index: -1
+
 
 .main-slider-item__content
   margin: auto auto 0 0
@@ -515,10 +530,32 @@ main
   font-weight: 600
   margin: auto 0 0
 
+.basket-fixed
+  position: fixed
+  z-index: 5
+  width: 55px
+  height: 55px
+  display: none
+  align-items: center
+  justify-content: center
+  right: 15px
+  top: 50%
+  transform: translate(0,-50%)
+  box-shadow: 0px 4px 50px #FFC608
+  border: 2px solid #FFFFFF
+    radius: 50%
+  background: $accent
+  .svg-icon
+    fill: #2B2A29
+    width: 25px
+    height: 25px
+
 
 @import "header"
 @import "footer"
 @import "modal"
 @import "search"
+@import "page"
+@import "basket"
 @import "media"
 // Всегда в конце

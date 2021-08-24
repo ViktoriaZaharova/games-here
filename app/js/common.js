@@ -25,7 +25,7 @@ $(function () {
         close = $('.modal__close, .overlay'),
         modal = $('.modal__div');
 
-    open_modal.on('click',function (event) {
+    open_modal.on('click', function (event) {
         event.preventDefault();
 
         modal.css('display', 'none').animate({
@@ -63,7 +63,7 @@ $(function () {
 // hover header box
 $(".js-tab-trigger").hover(function () {
     var id = $(this).attr('data-tab'),
-        content = $('.js-tab-content[data-tab="'+ id +'"]');
+        content = $('.js-tab-content[data-tab="' + id + '"]');
 
     $('.js-tab-trigger.active').removeClass('active'); // 1
     $(this).addClass('active'); // 2
@@ -81,7 +81,7 @@ $('.down').on("click", function () {
     $input.change();
     return false;
 });
-$('.up').on("click",function () {
+$('.up').on("click", function () {
     let $input = $(this).parent().find('input');
     $input.val(parseInt($input.val()) + 1);
     $input.change();
@@ -102,21 +102,24 @@ $('.btn-entrance').on('click', function (e) {
 
 // search mobile
 $('.btn-open-search').on('click', function () {
-    $('.form-search').fadeIn();
+    $('.form-search-mobile').fadeIn();
+    $('.overlay').fadeIn();
+});
+
+$('.overlay').on('click', function () {
+    $('.form-search-mobile').fadeOut();
+    $('.search-result').css('display', 'none');
+});
+
+$('.form-search input').focus(function () {
     $('.search-result').fadeIn();
 });
 
-$(function () {
-    $('.form-search input').keydown(checkInput).keyup(checkInput);
+
+$('.form-search input').blur(function () {
+    $('.search-result').fadeOut();
 });
 
-function checkInput() {
-    if ($('.form-search input').val() === "") {
-        $('.search-result').css('display', 'none');
-    } else {
-        $('.search-result').css('display', 'block');
-    }
-}
 
 // load card
 $('.btn-load').on('click', function (e) {
@@ -124,7 +127,7 @@ $('.btn-load').on('click', function (e) {
     $(this).parents('.tabs__content').find('.product-col:hidden').slideDown();
 
     var onBlock = $(this).parents('.tabs__content').find('.product-col:hidden').length;
-    if(onBlock <= 0) {
+    if (onBlock <= 0) {
         $(this).hide();
     }
 });

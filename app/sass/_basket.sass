@@ -1,0 +1,70 @@
+@import "fonts"
+@import "vars"
+
+.agreement
+  text-align: center
+  font-size: 14px
+  font-weight: 600
+  margin: 60px 0 0
+  .box-text
+    max-width: 955px
+    width: 100%
+    margin: 0 auto
+
+.form-basket
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  &__title
+    padding: 0 30px 20px
+  h3
+    font-size: 24px
+    font-weight: 600
+  .btn
+    width: fit-content
+  label
+    margin: 0
+  .basket-card
+    max-width: 551px
+  .amount
+    input
+      border: none
+      padding: 0
+  .scroll-vertical
+    &::-webkit-scrollbar-track-piece, &::-webkit-scrollbar-corner
+      background: #2D2F34
+  .basket-card__img
+    width: 100px
+  .basket-card__body
+    width: calc(100% - 100px)
+
+.form-basket-products
+  max-width: 635px
+  width: 100%
+
+.form-basket-payments
+  width: calc(100% - 635px)
+  padding: 0 0 40px
+
+.form-basket__total
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  padding: 30px
+  .total-sum
+    width: auto
+  .sum-val
+    margin: 0 0 0 15px
+    font-weight: bold
+  .btn
+    margin: 0 0 0 auto
+
+.form-basket__body
+  background: #2D2F34
+  border-radius: 20px
+  width: 100%
+  padding: 20px 30px
+
+.confirmation
+  margin: 30px 0 0
