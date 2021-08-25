@@ -201,11 +201,37 @@ $('.links-close-dropdown').on('click', function (e) {
     $(this).parents('.dropdown-mobile').removeClass('active');
 });
 
-// событие увода мыши с блока
-// $(document).mouseout(function (e) { // событие  увода мыши
-//     var div = $(".js-tab-content"); // тут указываем ID элемента
-//     if (!div.is(e.target) // если увели мышку
-//         && div.has(e.target).length === 0) { // и не по его дочерним элементам
-//         div.removeClass('active');
-//     }
-// });
+// preview img clicked = src max img
+$(document).ready(function () {
+    var penImg = $('.product-image__max img');
+    var linksImg = $('.product-image__max a');
+
+    $('.product-image__min div.item').on('click', function () {
+        $('.product-image__min div.item').removeClass('click-item');
+        $(this).addClass('click-item');
+        var imgPath;
+
+        imgPath = $(this).attr('data-img-path');
+
+        penImg.attr('src', imgPath);
+        linksImg.attr('href', imgPath);
+
+    });
+});
+
+// show block product text
+$('.read-more').on('click', function (e) {
+    e.preventDefault();
+   $(this).siblings('.product-wrapper__info-list').toggleClass('open');
+});
+
+
+// событие клика за пределами блока
+$(document).mouseup(function (e){ // событие клика по веб-документу
+    var div = $(".js-tab-content"); // тут указываем ID элемента
+    if (!div.is(e.target) // если клик был не по нашему блоку
+        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        div.removeClass('active'); // скрываем его
+        $('.js-tab-trigger').removeClass('active'); // скрываем его
+    }
+});
