@@ -251,3 +251,9 @@ $(document).mouseup(function (e){ // событие клика по веб-до�
         $('.js-tab-trigger').removeClass('active'); // скрываем его
     }
 });
+
+// clone block
+if ($(".product-image__min").length){
+    $('.product-image__min').clone().appendTo('.block-preview-mobile .scroll-horizontal');
+}
+

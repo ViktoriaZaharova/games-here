@@ -28,6 +28,17 @@
   .product-card-row .product-card__body
     padding: 0 0 0 30px
 
+  .product-wrapper h1
+    font-size: 50px
+
+  .comments-product .tabs__caption li
+    margin-right: 0
+    font-size: 20px
+    width: 140px
+
+  .btn-question
+    left: 10px
+
 @media only screen and (max-width: 1420px)
   .logo
     font-size: 40px
@@ -105,6 +116,16 @@
 
   .product-card-row .product-card__salesman
     font-size: 20px
+
+  .product-image__max, .product-image__min
+    max-width: 420px
+
+  .product-image__max-it
+    height: 550px
+
+  .product-wrapper-content, .comments-product
+    width: calc(100% - 420px)
+
 
 @media only screen and (max-width: 1260px)
   .payment
@@ -231,6 +252,97 @@
     max-width: none
     .basket-card
       max-width: 98%
+
+  .product-wrapper-content
+    width: 100%
+    padding: 0
+    margin: 20px 0 0
+
+  .product-image__max
+    margin: 0 auto
+    padding: 0
+    &:before
+      display: none
+
+  .product-wrapper
+    padding: 0 0 30px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      width: 100%
+      height: 2px
+      background: rgba(255, 255, 255, 0.2)
+      border-radius: 20px
+    h1
+      width: 100%
+      text-align: center
+      font-size: 40px
+      margin: 0 0 20px
+
+  .product-wrapper__bottom
+    justify-content: center
+
+  .product-wrapper__head
+    padding: 0 0 30px
+
+  .product-wrapper__body
+    padding: 30px 0 0
+    flex-direction: column-reverse
+
+  .product-wrapper__info
+    padding: 0
+    width: 100%
+
+  .product-wrapper-two
+    margin: 0
+    .product-image__min
+      display: none
+
+  .block-preview-mobile
+    display: block
+    padding: 30px 0
+
+  .characteristics-product
+    max-width: none
+    padding: 0 0 30px
+    position: relative
+    border-radius: 0
+    background: transparent
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      width: 100%
+      height: 2px
+      background: rgba(255, 255, 255, 0.2)
+      border-radius: 20px
+
+  .product-image__min
+
+    max-width: none
+    flex-wrap: nowrap
+    .item
+      width: 155px
+      height: 100px
+      margin: 0 10px 6px 0
+      min-width: 155px
+
+  .comments-product
+    padding: 30px 0 0
+    width: 100%
+    h3
+      max-width: none
+      width: 100%
+    .tabs__caption
+      max-width: none
+      width: 100%
+
+  .product-wrapper__info .btn
+    width: 100%
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1060px)
@@ -425,6 +537,32 @@
   .catalog-tab.active
     display: none
 
+  .btn-play
+    display: none
+
+  .form-comment-authorization
+    padding: 20px
+    p
+      margin: 0 auto 20px
+      width: 100%
+      text-align: center
+    .btn
+      margin: 0 auto
+
+  .bonus
+    font-size: 20px
+
+  .comment-box__text
+    font-size: 18px
+
+  .name-user
+    font-size: 20px
+
+  .date-comment
+    font-size: 16px
+
+
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
   .col-3
@@ -492,6 +630,19 @@
 
   .agreement
     margin: 40px auto 0
+
+  .price-wrapper
+    width: 100%
+    margin: 0 auto 20px
+    justify-content: center
+    .price
+      font-size: 36px
+
+  .product-wrapper h1
+    font-size: 22px
+
+
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 640px)
@@ -683,6 +834,73 @@
 
   .form-basket__body
     padding: 20px
+
+  .similar-products, .comments-product .tabs__caption, .bonus, .btn-question
+    display: none
+
+  .comments-product
+    h3
+      display: none
+
+  .title-mobile
+    display: flex
+    h3
+      display: inline-block
+      width: fit-content
+
+  .comment-box
+    position: relative
+    &__photo
+      position: absolute
+      left: 0
+      top: 0
+      width: 60px
+      height: 60px
+
+
+  .comment-box-answer
+    width: 100%
+
+  .comment-box__body
+    width: 100%
+    padding: 0
+
+  .comment-box__top
+    padding: 0 0 0 80px
+    flex-direction: column
+    align-items: flex-start
+    margin: 0 0 15px
+
+  .comment-box-answer
+    padding: 15px 0 0
+    border: none
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      right: 0
+      top: 0
+      height: 2px
+      width: calc(100% - 80px)
+      background: rgba(255, 255, 255, 0.2)
+    .comment-box__photo
+      top: 15px
+
+  .name-user
+    margin: 0 0 15px
+
+  .product-wrapper__bottom
+    flex-direction: column
+    align-items: center
+    .btn
+      margin: 0 auto 10px
+      padding: 0 30px
+
+  .breadcrumb
+    font-size: 14px
+
+  .product-image__max-it
+    height: 380px
 
 @media only screen and (max-width: 480px)
   .w-25
