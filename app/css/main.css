@@ -2737,7 +2737,12 @@ footer {
       -ms-flex-align: start;
           align-items: flex-start;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  margin: -90px 0 0; }
+  .product-wrapper-two h3 {
+    margin: 0 0 30px;
+    font-size: 30px;
+    font-weight: 600; }
 
 .product-image__min {
   display: -webkit-box;
@@ -2774,6 +2779,155 @@ footer {
       height: 100%;
       -o-object-fit: cover;
          object-fit: cover; }
+
+.btn-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  fill: #FFC608; }
+
+.comments-product {
+  width: calc(100% - 517px);
+  padding: 0 0 0 40px; }
+  .comments-product .tabs__caption {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: calc(100% - 378px);
+    margin: 0; }
+    .comments-product .tabs__caption li {
+      margin: 0 20px 20px 0;
+      padding: 15px 0;
+      width: 200px;
+      text-align: center;
+      border: none;
+      background: transparent;
+      font-size: 24px;
+      font-weight: 600;
+      color: #fff; }
+      .comments-product .tabs__caption li:last-child {
+        margin: 0 0 20px; }
+    .comments-product .tabs__caption .active {
+      background: #fff;
+      color: #1F2023; }
+
+.form-comment {
+  margin: 0 0 30px;
+  width: 100%;
+  background: #2D2F34;
+  border-radius: 10px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .form-comment .btn {
+    padding: 0 70px;
+    font-weight: 600; }
+
+.form-comment-authorization {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 20px;
+  font-weight: 500; }
+  .form-comment-authorization p {
+    margin: 0 40px 0 0; }
+
+.bonus {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 40px; }
+
+.comment-items {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  margin: 0 0 30px;
+  padding: 0 0 30px; }
+  .comment-items:last-child {
+    margin: 0;
+    padding: 0;
+    border: none; }
+
+.comment-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 0 30px; }
+  .comment-box__photo {
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    width: 80px;
+    height: 80px; }
+    .comment-box__photo img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .comment-box__body {
+    padding: 0 0 0 25px;
+    width: calc(100% - 80px); }
+
+.comment-box__top {
+  padding: 20px 0 0;
+  margin: 0 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.name-user {
+  font-size: 30px;
+  font-weight: 600; }
+
+.date-comment {
+  font-size: 20px;
+  font-weight: 600; }
+
+.comment-box__text {
+  font-size: 24px;
+  font-weight: 500; }
+  .comment-box__text p {
+    margin: 0 0 30px; }
+    .comment-box__text p:last-child {
+      margin: 0; }
+
+.comment-box-answer {
+  width: calc(100% - 120px);
+  margin: 0 0 0 auto;
+  padding: 30px 0 0;
+  border-top: 2px solid rgba(255, 255, 255, 0.2); }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
