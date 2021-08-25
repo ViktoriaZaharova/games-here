@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>GAMESHERE</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<!--mobile menu-->
+<div class="mobile-menu">
+
+  <div class="mobile-menu-item">
+    <a href="catalog.html" class="btn btn-accent btn-catalog-mobile">Каталог игр</a>
+    <a href="#" class="mobile-menu-links btn-tab-click" data-tab="category-mob">Все категории</a>
+    <a href="#" class="mobile-menu-links btn-tab-click" data-tab="cabinet-mob">Личный кабинет</a>
+  </div>
+
+  <div class="mobile-menu-category mobile-menu-level box-tab" data-id="category-mob">
+    <div class="mobile-menu-level__title">
+      <a href="#" class="links-close-mobile-menu">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#arrow-left"></use>
+        </svg>
+      </a>
+      <h3>Все категории</h3>
+    </div>
+    <div class="mobile-menu-level__body">
+      <div class="panel_heading">
+        <div class="block_title">
+          <h3>Аккаунты</h3>
+        </div>
+        <div class="block_hover">
+          <ul class="list-menu">
+            <li><a href="#">Steam</a></li>
+            <li><a href="#">Epic game store</a></li>
+            <li><a href="#">Origin</a></li>
+            <li><a href="#">Wargaming GC</a></li>
+            <li><a href="#">Uplay</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="panel_heading">
+        <div class="block_title">
+          <h3>Игры</h3>
+        </div>
+        <div class="block_hover">
+          <ul class="list-menu">
+            <li><a href="#">Steam</a></li>
+            <li><a href="#">Epic game store</a></li>
+            <li><a href="#">Origin</a></li>
+            <li><a href="#">Wargaming GC</a></li>
+            <li><a href="#">Uplay</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="panel_heading">
+        <div class="block_title">
+          <h3>Подписка</h3>
+        </div>
+        <div class="block_hover">
+          <ul class="list-menu">
+            <li><a href="#">Steam</a></li>
+            <li><a href="#">Epic game store</a></li>
+            <li><a href="#">Origin</a></li>
+            <li><a href="#">Wargaming GC</a></li>
+            <li><a href="#">Uplay</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="panel_heading">
+        <div class="block_title">
+          <h3>Программа</h3>
+        </div>
+        <div class="block_hover">
+          <ul class="list-menu">
+            <li><a href="#">Steam</a></li>
+            <li><a href="#">Epic game store</a></li>
+            <li><a href="#">Origin</a></li>
+            <li><a href="#">Wargaming GC</a></li>
+            <li><a href="#">Uplay</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="panel_heading">
+        <div class="block_title">
+          <h3>Прочее</h3>
+        </div>
+        <div class="block_hover">
+          <ul class="list-menu">
+            <li><a href="#">Steam</a></li>
+            <li><a href="#">Epic game store</a></li>
+            <li><a href="#">Origin</a></li>
+            <li><a href="#">Wargaming GC</a></li>
+            <li><a href="#">Uplay</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="mobile-menu-category mobile-menu-level box-tab" data-id="cabinet-mob">
+    <div class="mobile-menu-level__title">
+      <a href="#" class="links-close-mobile-menu">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#arrow-left"></use>
+        </svg>
+      </a>
+      <h3>Вход в личный кабинет</h3>
+    </div>
+    <div class="mobile-menu-level__body">
+      <form method="post" class="form-cabinet">
+        <label>
+          <input type="text" placeholder="Введите E-mail" name="mail">
+        </label>
+        <label><input type="text" placeholder="Введите пароль" name="password"></label>
+        <a href="#" class="color-grey links-form">Забыли пароль?</a>
+        <button type="submit" class="btn btn-accent">Войти в кабинет</button>
+      </form>
+
+      <div class="cabinet-box__footer">
+        <p>Первый раз здесь?</p>
+        <a href="#" class="btn btn-white btn-tab-click" data-tab="registration-mob">Зарегистрироваться</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-menu-category mobile-menu-level box-tab" data-id="registration-mob">
+    <div class="mobile-menu-level__title">
+      <a href="#" class="links-close-mobile-menu">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#arrow-left"></use>
+        </svg>
+      </a>
+      <h3>Регистрация аккаунта</h3>
+    </div>
+    <div class="mobile-menu-level__body">
+      <form method="post" class="form-cabinet">
+        <div class="tabs">
+          <ul class="tabs__caption">
+            <li class="active">Покупатель</li>
+            <li>Продавец</li>
+          </ul>
+          <div class="tabs__content active">
+            <label>
+              <input type="text" placeholder="Введите E-mail" name="mail">
+            </label>
+            <label><input type="text" placeholder="Введите пароль" name="password"></label>
+          </div>
+          <div class="tabs__content">
+            <label>
+              <input type="text" placeholder="Введите E-mail" name="mail">
+            </label>
+            <label><input type="text" placeholder="Введите пароль" name="password"></label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-accent">Создать аккаунт</button>
+      </form>
+
+      <div class="cabinet-box__footer">
+        <p>Уже есть аккаунт?</p>
+        <a href="#" class="btn btn-white btn-tab-click" data-tab="cabinet-mob">Войти в кабинет</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-menu-item">
+    <a href="#" class="mobile-menu-links">Покупателям</a>
+    <a href="#" class="mobile-menu-links">Продавцам</a>
+    <a href="#" class="mobile-menu-links">Правила</a>
+    <a href="#" class="mobile-menu-links">Описание сервиса</a>
+    <a href="#" class="mobile-menu-links color-accent font-600">Как купить?</a>
+  </div>
+
+  <div class="mobile-menu-item">
+    <div class="language-wrapper">
+      <select name="select" class="select">
+        <option value="RU">RU</option>
+        <option value="en">en</option>
+      </select>
+
+      <select name="select" class="select">
+        <option value="РУБ ₽">РУБ ₽</option>
+        <option value="USD $">USD $</option>
+      </select>
+    </div>
+  </div>
+</div>
+<!--mobile menu end-->
+
+<!--search result-->
+<div class="search-result">
+  <div class="container">
+    <a href="#" class="links-prev search-result-next">
+      <span class="links-prev__icon"><svg class="svg-icon"><use
+          xlink:href="img/sprite.svg#arrow-left"></use></svg></span>
+      <span class="links-prev__text">Результаты поиска</span>
+    </a>
+
+    <div class="scroll-horizontal">
+      <div class="search-result-wrapper w-100">
+        <div class="product-card" itemscope itemtype="http://schema.org/Product">
+          <a href="product.html" itemprop="image" class="product-card__img"><img src="img/product4.png" alt="">
+            <span class="sale">-63%</span>
+          </a>
+          <div class="product-card__body" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+            <meta itemprop="price" content="1999">
+            <meta itemprop="priceCurrency" content="RUB">
+            <a href="#" class="product-card__title" itemprop="name">Kingdom Come: Deliverance</a>
+            <div class="product-card__salesman">Продавец: UnlockOnline</div>
+            <div class="product-card__footer">
+              <div class="price">1999 ₽</div>
+              <a href="#" class="btn btn-accent">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
+                <span class="btn-text">В корзину</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" itemscope itemtype="http://schema.org/Product">
+          <a href="product.html" itemprop="image" class="product-card__img"><img src="img/product6.png" alt="">
+            <span class="sale">-63%</span>
+          </a>
+          <div class="product-card__body" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+            <meta itemprop="price" content="165">
+            <meta itemprop="priceCurrency" content="RUB">
+            <a href="#" class="product-card__title" itemprop="name">Kingdom Come:
+              Deliverance – Band of Bastards</a>
+            <div class="product-card__salesman">Продавец: UnlockOnline</div>
+            <div class="product-card__footer">
+              <div class="price">165 ₽</div>
+              <a href="#" class="btn btn-accent">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
+                <span class="btn-text">В корзину</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" itemscope itemtype="http://schema.org/Product">
+          <a href="product.html" itemprop="image" class="product-card__img"><img src="img/product7.png" alt="">
+            <span class="sale">-63%</span>
+          </a>
+          <div class="product-card__body" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+            <meta itemprop="price" content="165">
+            <meta itemprop="priceCurrency" content="RUB">
+            <a href="#" class="product-card__title" itemprop="name">Kingdom Come: Deliverance</a>
+            <div class="product-card__salesman">Продавец: UnlockOnline</div>
+            <div class="product-card__footer">
+              <div class="price">165 ₽</div>
+              <a href="#" class="btn btn-accent">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
+                <span class="btn-text">В корзину</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" itemscope itemtype="http://schema.org/Product">
+          <a href="product.html" itemprop="image" class="product-card__img"><img src="img/product8.png" alt="">
+            <span class="sale">-63%</span>
+          </a>
+          <div class="product-card__body" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+            <meta itemprop="price" content="165">
+            <meta itemprop="priceCurrency" content="RUB">
+            <a href="#" class="product-card__title" itemprop="name">Kingdom Come: Deliverance</a>
+            <div class="product-card__salesman">Продавец: UnlockOnline</div>
+            <div class="product-card__footer">
+              <div class="price">165 ₽</div>
+              <a href="#" class="btn btn-accent">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
+                <span class="btn-text">В корзину</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" itemscope itemtype="http://schema.org/Product">
+          <a href="product.html" itemprop="image" class="product-card__img"><img src="img/product9.png" alt="">
+            <span class="sale">-63%</span>
+          </a>
+          <div class="product-card__body" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+            <meta itemprop="price" content="165">
+            <meta itemprop="priceCurrency" content="RUB">
+            <a href="#" class="product-card__title" itemprop="name">Kingdom Come:
+              Deliverance – Art Book</a>
+            <div class="product-card__salesman">Продавец: UnlockOnline</div>
+            <div class="product-card__footer">
+              <div class="price">165 ₽</div>
+              <a href="#" class="btn btn-accent">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
+                <span class="btn-text">В корзину</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" itemscope itemtype="http://schema.org/Product">
+          <a href="product.html" itemprop="image" class="product-card__img"><img src="img/product4.png" alt="">
+            <span class="sale">-63%</span>
+          </a>
+          <div class="product-card__body" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+            <meta itemprop="price" content="1999">
+            <meta itemprop="priceCurrency" content="RUB">
+            <a href="#" class="product-card__title" itemprop="name">Kingdom Come: Deliverance</a>
+            <div class="product-card__salesman">Продавец: UnlockOnline</div>
+            <div class="product-card__footer">
+              <div class="price">1999 ₽</div>
+              <a href="#" class="btn btn-accent">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
+                <span class="btn-text">В корзину</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" itemscope itemtype="http://schema.org/Product">
+          <a href="product.html" itemprop="image" class="product-card__img"><img src="img/product4.png" alt="">
+            <span class="sale">-63%</span>
+          </a>
+          <div class="product-card__body" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+            <meta itemprop="price" content="1999">
+            <meta itemprop="priceCurrency" content="RUB">
+            <a href="#" class="product-card__title" itemprop="name">Kingdom Come: Deliverance</a>
+            <div class="product-card__salesman">Продавец: UnlockOnline</div>
+            <div class="product-card__footer">
+              <div class="price">1999 ₽</div>
+              <a href="#" class="btn btn-accent">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
+                <span class="btn-text">В корзину</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!--search result end-->
+
+<form method="post" class="form-search form-search-mobile">
+  <label><input type="text" name="name" placeholder="Поиск игр в каталоге"></label>
+  <button type="submit" class='btn-search'>
+    <svg class="svg-icon">
+      <use xlink:href="img/sprite.svg#search"></use>
+    </svg>
+  </button>
+</form>
+
+<header>
+  <div class="header-top">
+    <div class="container">
+      <a href="index.html" class="logo">GamesHere</a>
+      <a href="catalog.html" class="btn btn-accent btn-catalog">Каталог игр</a>
+
+      <form method="post" class="form-search">
+        <label><input type="text" name="name" placeholder="Поиск игр в каталоге"></label>
+        <button type="submit" class='btn-search'>
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+
+
+      <div class="btn-open-search">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </div>
+
+      <div class="header-box">
+        <a href="#" class="header-link header-link-cabinet js-tab-trigger" data-tab="tab2">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#user"></use>
+          </svg>
+        </a>
+        <a href="basket.html" class="header-link header-link-basket js-tab-trigger" data-tab="tab1">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#basket"></use>
+          </svg>
+        </a>
+
+        <div class="language-wrapper">
+          <select name="select" class="select">
+            <option value="RU">RU</option>
+            <option value="en">en</option>
+          </select>
+
+          <select name="select" class="select">
+            <option value="РУБ ₽">РУБ ₽</option>
+            <option value="USD $">USD $</option>
+          </select>
+        </div>
+
+        <div class="dropdown-box dropdown-box-basket js-tab-content" data-tab="tab1">
+          <div class="dropdown-box__header">
+            <h3>Корзина</h3>
+            <a href="#" class="color-grey links-clear">Очистить корзину</a>
+          </div>
+          <div class="dropdown-box__body">
+            <div class="scroll-vertical">
+              <div class="basket-card" itemscope itemtype="http://schema.org/Product">
+                <a href="#" class="btn-close-card">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+                </a>
+                <a href="product.html" class="basket-card__img" itemprop="image"><img src="img/basket1.png" alt=""></a>
+                <div class="basket-card__body">
+                  <div class="basket-card__top">
+                    <a href="product.html" class="basket-card__title" itemprop="name">CYBERPUNK 2077</a>
+                    <ul class="list-characteristics">
+                      <li>
+                        <p>Регион активации:</p><span class="color-accent">Россия</span>
+                      </li>
+                      <li><p>Сервис активации:</p><span class="color-accent">Steam</span></li>
+                    </ul>
+                  </div>
+                  <div class="basket-card__bottom" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="1999">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <div class="price color-accent">1999 ₽</div>
+                    <div class="amount">
+                      <span class="down">-</span>
+                      <input type="text" value="1"/>
+                      <span class="up">+</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="basket-card" itemscope itemtype="http://schema.org/Product">
+                <a href="#" class="btn-close-card">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+                </a>
+                <a href="product.html" class="basket-card__img" itemprop="image"><img src="img/product4.png" alt=""></a>
+                <div class="basket-card__body">
+                  <div class="basket-card__top">
+                    <a href="product.html" class="basket-card__title" itemprop="name">Kingdom Come: Deliverance</a>
+                    <ul class="list-characteristics">
+                      <li>
+                        <p>Регион активации:</p><span class="color-accent">Россия</span>
+
+                      </li>
+                      <li><p>Сервис активации:</p><span class="color-accent">Steam</span></li>
+                    </ul>
+                  </div>
+                  <div class="basket-card__bottom" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="1999">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <div class="price color-accent">1999 ₽</div>
+                    <div class="amount">
+                      <span class="down">-</span>
+                      <input type="text" value="1"/>
+                      <span class="up">+</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="basket-card" itemscope itemtype="http://schema.org/Product">
+                <a href="#" class="btn-close-card">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+                </a>
+                <a href="product.html" class="basket-card__img" itemprop="image"><img src="img/product5.png" alt=""></a>
+                <div class="basket-card__body">
+                  <div class="basket-card__top">
+                    <a href="product.html" class="basket-card__title" itemprop="name">Star Wars: Battlefront 2 (Classic,
+                      2005)</a>
+                    <ul class="list-characteristics">
+                      <li>
+                        <p>Регион активации:</p><span class="color-accent">Россия</span>
+
+                      </li>
+                      <li><p>Сервис активации:</p><span class="color-accent">Steam</span></li>
+                    </ul>
+                  </div>
+                  <div class="basket-card__bottom" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="1999">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <div class="price color-accent">1999 ₽</div>
+                    <div class="amount">
+                      <span class="down">-</span>
+                      <input type="text" value="1"/>
+                      <span class="up">+</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-box__footer">
+            <div class="total-sum">
+              <p>Сумма покупок:</p>
+              <div class="sum-val">44444 ₽</div>
+            </div>
+            <a href="#" class="btn btn-accent">Оформить заказ</a>
+          </div>
+        </div>
+
+        <div class="dropdown-box js-tab-content" data-tab="tab2">
+
+          <div class="dropdown-box__body">
+            <div class="cabinet-box-wrapper cabinet-box-entrance">
+              <div class="cabinet-box">
+                <div class="cabinet-box__title">
+                  <h3>Вход в личный кабинет</h3>
+                </div>
+
+                <div class="cabinet-box__body">
+                  <form method="post" class="form-cabinet">
+                    <label>
+                      <input type="text" placeholder="Введите E-mail" name="mail">
+                    </label>
+                    <label><input type="text" placeholder="Введите пароль" name="password"></label>
+                    <a href="#" class="color-grey links-form">Забыли пароль?</a>
+                    <button type="submit" class="btn btn-accent">Войти в кабинет</button>
+                  </form>
+                </div>
+              </div>
+
+              <div class="cabinet-box__footer">
+                <p>Первый раз здесь?</p>
+                <a href="#" class="btn btn-white btn-registration">Зарегистрироваться</a>
+              </div>
+            </div>
+
+            <div class="cabinet-box-wrapper cabinet-box-registration">
+              <div class="cabinet-box">
+                <div class="cabinet-box__title">
+                  <h3>Регистрация</h3>
+                </div>
+
+                <div class="cabinet-box__body">
+                  <form method="post" class="form-cabinet">
+                    <div class="tabs">
+                      <ul class="tabs__caption">
+                        <li class="active">Покупатель</li>
+                        <li>Продавец</li>
+                      </ul>
+                      <div class="tabs__content active">
+                        <label>
+                          <input type="text" placeholder="Введите E-mail" name="mail">
+                        </label>
+                        <label><input type="text" placeholder="Введите пароль" name="password"></label>
+                      </div>
+                      <div class="tabs__content">
+                        <label>
+                          <input type="text" placeholder="Введите E-mail" name="mail">
+                        </label>
+                        <label><input type="text" placeholder="Введите пароль" name="password"></label>
+                      </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-accent">Создать аккаунт</button>
+                  </form>
+                </div>
+              </div>
+
+              <div class="cabinet-box__footer">
+                <p>Уже есть аккаунт?</p>
+                <a href="#" class="btn btn-white btn-entrance">Войти в кабинет</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-burger">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#burger"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container">
+      <ul class="menu">
+        <li><a href="#">Steam</a></li>
+        <li><a href="#">Origin</a></li>
+        <li><a href="#">Uplay</a></li>
+        <li><a href="#">WOT</a></li>
+        <li><a href="#">Minecraft</a></li>
+        <li><a href="#">Fortnite</a></li>
+        <li><a href="#">Counter Strike</a></li>
+        <li><a href="#">Warface</a></li>
+        <li><a href="#">GTA 5</a></li>
+        <li>
+          <a href="#modalCategory" class="links-category open_modal">
+            <span class="links-category__text">Все категории</span>
+            <span class="links-category__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#category"></use></svg></span>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</header>
+
+<div class="main-page page-section">
+  <div class="container">
+
+    <div class="main-page-box mb-40">
+      <ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a
+            href="index.html">Главная</a>
+          <meta itemprop="position" content="1">
+        </li>
+        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+          <span>Произвольная страница</span>
+          <meta itemprop="position" content="3">
+        </li>
+      </ul>
+      <h1 class="h1">Заголовок H1</h1>
+      <h2 class="h2">Заголовок H2</h2>
+      <h3 class="h3">Заголовок H3 (Заголовок новости)</h3>
+      <h4 class="h4">Заголовок H4</h4>
+    </div>
+
+    <div class="main-page-box mb-40">
+      <h1 class="h1-title">Название игры </h1>
+      <div class="box-text-main">
+        <p>🔥МГНОВЕННАЯ выдача товара сразу после покупки!🔥 Вам больше
+          не нужно ждать ответа администратора и предоставлять удаленный доступ посредством TeamViewer для выполнения
+          активации игры.
+        </p>
+      </div>
+    </div>
+
+    <div class="main-page-box mb-40">
+      <h5 class="color-accent title-game">Название игры в карточке
+        в таблице</h5>
+
+      <div class="salesman-game">Продавец : Никнейм</div>
+      <div class="price-game">Цена ₽</div>
+    </div>
+    <div class="main-page-box mb-40">
+      <h5 class="color-accent title-game title-game-max">Название игры в карточке в списке</h5>
+
+      <div class="salesman-game salesman-game-max">Продавец: UnlockOnline</div>
+      <div class="price-game price-game-max">Цена ₽</div>
+    </div>
+
+    <div class="main-page-box mb-40">
+      <h1 class="h1-title">Списки и таблицы
+        (отступы)</h1>
+
+      <div class="box-row w-100 d-flex flex-wrap justify-between align-items-start mt-40">
+        <ul class="list max-400 w-100">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
+        <ul class="list-col max-200 w-100 ml-auto">
+          <li class="mb-20"></li>
+          <li class="mb-20"></li>
+          <li class="mb-20"></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-page-box mb-40">
+      <h1 class="h1-title">Доп товары или просмотренные</h1>
+
+      <ul class="list-row w-100 mt-40">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-box">
+        <a href="index.html" class="logo">GamesHere</a>
+        <div class="box-text">
+          <p>Этот сайт не был одобрен Корпорациями Valve, Ubisoft, Electronic Arts, Crytek, Blizzard, Wargaming и
+            другими, и не аффилирован с ними. Название
+            и логотипы данных корпораций являются товарными знаками
+            или зарегистрированными товарными знаками этих Корпораций в США, России и/или других странах. Все права
+            сохранены. Все названия продуктов, компаний и марок, логотипы и товарные знаки, как и содержимое продуктов
+            (игр и прочего) являются собственностью соответствующих владельцев.</p>
+        </div>
+      </div>
+
+      <ul class="footer-menu">
+        <li><a href="catalog.html">Каталог товаров</a></li>
+        <li><a href="#">Свежее поступление</a></li>
+        <li><a href="#">Рекомендации</a></li>
+        <li><a href="#">Сезонные скидки</a></li>
+        <li><a href="#">Лидеры продаж</a></li>
+        <li><a href="#">Покупателям</a></li>
+        <li><a href="#">Продавцам</a></li>
+        <li><a href="#">Правила</a></li>
+        <li><a href="#">Описание сервиса</a></li>
+        <li><a href="#" class="btn btn-accent">Как купить</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <ul class="payment">
+        <li><img src="img/mastercard.svg" alt=""></li>
+        <li><img src="img/ms-secure.svg" alt=""></li>
+        <li><img src="img/visa.svg" alt=""></li>
+        <li><img src="img/verifed-visa.svg" alt=""></li>
+        <li><img src="img/paypal.svg" alt=""></li>
+        <li><img src="img/webmoney.svg" alt=""></li>
+        <li><img src="img/yandex-money.svg" alt=""></li>
+        <li><img src="img/qiwi.svg" alt=""></li>
+      </ul>
+      <div class="copyright">GAMESHERE.BY © 2020</div>
+      <a href="#" class="developer">Разработка сайта: Tangata.by</a>
+    </div>
+  </div>
+</footer>
+
+<!--модалное окно-->
+<div class="modal__div" id="modalCategory">
+  <div class="modal__wrapper">
+    <div class="modal-head">
+      <a href="index.html" class="logo">GamesHere</a>
+      <h3>Все категории</h3>
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="modal-body w-100">
+      <div class="row">
+        <div class="col-5">
+          <div class="category-box">
+            <h4>Аккаунты</h4>
+            <ul class="list-category">
+              <li><a href="#">Steam</a></li>
+              <li><a href="#">Origin</a></li>
+              <li><a href="#">Uplay</a></li>
+              <li><a href="#">Epic game store</a></li>
+              <li><a href="#">Wargaming GC</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="category-box">
+            <h4>Игры</h4>
+            <ul class="list-category">
+              <li><a href="#">Counter-Strike</a></li>
+              <li><a href="#">Minecraft</a></li>
+              <li><a href="#">Fortnite</a></li>
+              <li><a href="#">Warface</a></li>
+              <li><a href="#">GTA 5</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="category-box">
+            <h4>Подписка</h4>
+            <ul class="list-category">
+              <li><a href="#">Twitch</a></li>
+              <li><a href="#">Netflix</a></li>
+              <li><a href="#">PornHub</a></li>
+              <li><a href="#">Spotify</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="category-box">
+            <h4>Программы</h4>
+            <ul class="list-category">
+              <li><a href="#">Windows 10</a></li>
+              <li><a href="#">Kaspersky security</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="category-box">
+            <h4>Прочее</h4>
+            <ul class="list-category">
+              <li><a href="#">Цифровые товары</a></li>
+              <li><a href="#">Электронные книги</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal__div modal-question" id="modalQuestion">
+  <div class="modal__wrapper">
+    <div class="modal-head">
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="modal-body w-100">
+
+      <div class="modal-question-content">
+        <div class="modal-question-img">
+          <div class="quote"><p>Чтобы купить игру прямо сейчас нажми на зеленую кнопку</p></div>
+          <div class="image"><img src="img/minecraft.png" alt=""></div>
+        </div>
+        <div class="modal-question-text">
+          <div class="modal-question-text__top">
+            <div class="modal-title">Kingdom Come: Deliverance</div>
+            <div class="product-wrapper__bottom">
+              <div class="price-wrapper">
+                <div class="price">1999 ₽</div>
+                <div class="sale">-10%</div>
+              </div>
+
+              <a href="#" class="btn btn-green one-click-order btn-shadow">Купить сейчас</a>
+              <a href="#" class="btn btn-accent btn-opacity">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
+                <span class="btn-text">В корзину</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#modalQuestion2" class="btn btn-white btn-next-modal open_modal">Следующая подсказка</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal__div modal-question" id="modalQuestion2">
+  <div class="modal__wrapper">
+    <div class="modal-head">
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="modal-body w-100">
+
+      <div class="modal-question-content">
+        <div class="modal-question-img">
+          <div class="quote"><p>Чтобы добавить
+            игру в корзину, <br>
+            нажми желтую кнопку</p></div>
+          <div class="image"><img src="img/minecraft.png" alt=""></div>
+        </div>
+        <div class="modal-question-text">
+          <div class="modal-question-text__top">
+            <div class="modal-title">Kingdom Come: Deliverance</div>
+            <div class="product-wrapper__bottom">
+              <div class="price-wrapper">
+                <div class="price">1999 ₽</div>
+                <div class="sale">-10%</div>
+              </div>
+
+              <a href="#" class="btn btn-green one-click-order btn-opacity">Купить сейчас</a>
+              <a href="#" class="btn btn-accent btn-shadow-yellow">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
+                <span class="btn-text">В корзину</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#modalQuestion3" class="btn btn-white btn-next-modal open_modal">Следующая подсказка</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal__div modal-question" id="modalQuestion3">
+  <div class="modal__wrapper">
+    <div class="modal-head">
+      <div class="modal__close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="modal-body w-100">
+
+      <div class="modal-question-content">
+        <div class="modal-question-img">
+          <div class="quote"><p>Обязательно <br>
+            почитай описание
+            и минимальные требования для игры</p></div>
+          <div class="image"><img src="img/minecraft.png" alt=""></div>
+        </div>
+        <div class="modal-question-text">
+          <div class="modal-question-text__top btn-opacity">
+            <div class="modal-title">Kingdom Come: Deliverance</div>
+            <div class="product-wrapper__bottom">
+              <div class="price-wrapper">
+                <div class="price">1999 ₽</div>
+                <div class="sale">-10%</div>
+              </div>
+
+              <a href="#" class="btn btn-green one-click-order">Купить сейчас</a>
+              <a href="#" class="btn btn-accent">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
+                <span class="btn-text">В корзину</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="product-wrapper__info">
+            <div class="product-wrapper__info-list">
+              <div class="product-wrapper__info-box bg-brown">
+                <p>🔥МГНОВЕННАЯ выдача товара сразу после покупки!🔥 Вам больше
+                  не нужно ждать ответа администратора и предоставлять удаленный доступ посредством TeamViewer для
+                  выполнения активации игры.
+                </p>
+              </div>
+              <div class="product-wrapper__info-box bg-green">
+                <p>⭐ В Ultimate-версию включены ВСЕ DLC, в том числе последнее "LEGO Speed Champions".
+                  Языки: русский, английский, испанский, итальянский, китайский, корейский, немецкий, польский,
+                  португальский, французский.</p>
+              </div>
+              <div class="product-wrapper__info-box">
+                <p>Перед заказом Online активации проверьте на соответствие минимальных требований вашего компьютера в
+                  интересующей вас игре. Если ваш компьютер не соответствует минимальным требованиям игры, то мы не
+                  несем
+                  ответственности за приобретаемый вами товар.
+                  Перед заказом Online активации проверьте на соответствие минимальных требований вашего компьютера в
+                  интересующей вас игре.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at dolorum esse ex illum
+                  obcaecati placeat, quasi recusandae vel voluptatibus. Adipisci assumenda commodi consectetur
+                  cupiditate est excepturi id laborum omnis?</p>
+              </div>
+            </div>
+
+            <a href="#" class="read-more btn btn-white">Показать полное описание</a>
+          </div>
+        </div>
+
+        <a href="#modalQuestion3" class="btn btn-white btn-next-modal open_modal">Следующая подсказка</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Пoдлoжкa -->
+<div class="overlay"></div>
+
+<a href="basket.html" class="basket-fixed">
+  <svg class="svg-icon">
+    <use xlink:href="img/sprite.svg#basket"></use>
+  </svg>
+</a>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

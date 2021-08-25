@@ -244,6 +244,9 @@ button {
 .m-40 {
   margin: 40px 0; }
 
+.mt-40 {
+  margin-top: 40px; }
+
 .mb-40 {
   margin-bottom: 40px; }
 
@@ -345,6 +348,16 @@ h2 {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch; }
+
+.align-items-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .flex-wrap {
   -ms-flex-wrap: wrap;
@@ -2002,6 +2015,135 @@ footer {
   .page-500 .page-404__content {
     padding: 0 134px 0 0;
     width: calc(100% - 696px); }
+
+.main-page .container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.main-page-box {
+  width: 45%; }
+
+.h1 {
+  text-align: left;
+  margin: 0; }
+
+.h1-title {
+  font-size: 64px;
+  font-weight: bold;
+  margin: 0;
+  text-align: left; }
+
+.h2 {
+  text-align: left;
+  margin: 0; }
+
+.h3 {
+  font-size: 26px;
+  font-weight: 500; }
+
+.h4 {
+  font-size: 20px;
+  font-weight: 600; }
+
+.box-text-main {
+  font-size: 15px;
+  font-weight: 500; }
+
+.title-game {
+  font-size: 18px;
+  font-weight: bold; }
+
+.salesman-game {
+  font-weight: 500;
+  font-size: 16px; }
+
+.price-game {
+  font-size: 24px;
+  font-weight: bold; }
+
+.title-game-max {
+  font-size: 36px; }
+
+.salesman-game-max {
+  font-size: 28px; }
+
+.price-game-max {
+  font-size: 40px; }
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .list li {
+    width: 120px;
+    height: 120px;
+    background: #FFC608;
+    margin: 0 0 20px 0;
+    border-radius: 20px; }
+    .list li:last-child {
+      margin-right: 0; }
+
+.max-400 {
+  max-width: 400px; }
+
+.max-200 {
+  max-width: 200px; }
+
+.list-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .list-col li {
+    width: 100%;
+    height: 90px;
+    background: #fff;
+    border-radius: 20px; }
+
+.mb-20 {
+  margin-bottom: 20px; }
+
+.ml-auto {
+  margin-left: auto; }
+
+.list-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .list-row li {
+    margin: 0 40px 20px 0;
+    width: 90px;
+    height: 200px;
+    background: #fff;
+    border-radius: 20px; }
+    .list-row li:last-child {
+      margin-right: 0; }
 
 @font-face {
   font-family: "EarthOrbiterExtra";
@@ -3866,7 +4008,13 @@ footer {
     display: none; }
   .availability.d-mobile {
     display: block;
-    text-align: center; } }
+    text-align: center; }
+  .main-page-box {
+    width: 100%; }
+  .h1-title {
+    font-size: 50px; }
+  .list-row li {
+    margin: 0 20px 20px 0; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 640px) {
@@ -3943,7 +4091,17 @@ footer {
     font-size: 14px;
     height: 40px; }
   main .btn {
-    height: 40px; } }
+    height: 40px; }
+  .max-200, .max-400 {
+    max-width: none; }
+  .list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .list li {
+      margin: 0 20px 20px 0; }
+      .list li:last-child {
+        margin-right: 20px; } }
 
 @media only screen and (max-width: 576px) {
   .logo {
@@ -4105,7 +4263,25 @@ footer {
   .breadcrumb {
     font-size: 14px; }
   .product-image__max-it {
-    height: 380px; } }
+    height: 380px; }
+  .h1, .h2, .h3 {
+    font-size: 20px; }
+  .h1-title {
+    font-size: 22px; }
+  .title-game, .salesman-game {
+    font-size: 10px; }
+  .price-game {
+    font-size: 18px; }
+  .title-game-max {
+    font-size: 24px; }
+  .salesman-game-max {
+    font-size: 20px; }
+  .price-game-max {
+    font-size: 36px; }
+  .list li {
+    margin: 0 10px 20px; }
+    .list li:last-child {
+      margin: 0 10px 20px; } }
 
 @media only screen and (max-width: 480px) {
   .w-25 {
