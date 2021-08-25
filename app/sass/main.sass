@@ -107,6 +107,17 @@ input, textarea, select
   cursor: pointer
   transition: .3s ease
 
+textarea
+  border: none
+    bottom: 2px solid $accent
+  padding: 0 5px 6px
+  font-size: 20px
+  color: #fff
+  font-weight: 500
+  height: 40px
+  &::placeholder
+    color: #fff
+
 label
   display: block
   width: 100%
@@ -598,7 +609,7 @@ main
 
 .basket-fixed
   position: fixed
-  z-index: 5
+  z-index: 4
   width: 55px
   height: 55px
   display: none
