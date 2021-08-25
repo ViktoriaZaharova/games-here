@@ -90,10 +90,24 @@ header
   justify-content: center
   cursor: pointer
   margin: 0 0 0 20px
+  position: relative
   .svg-icon
     width: 19px
     height: 19px
     fill: #fff
+
+.burger-click
+  .svg-icon
+    display: none
+  &:before
+    content: ''
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 19px
+    height: 19px
+    background: url("../img/close.svg") no-repeat center
+      size: 100%
 
 .form-search
   position: relative

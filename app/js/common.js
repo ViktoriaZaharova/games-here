@@ -202,6 +202,12 @@ $('.links-close-dropdown').on('click', function (e) {
 
 });
 
+$('.links-close-mobile-menu').on('click', function (e) {
+    e.preventDefault();
+    $(this).parents('.mobile-menu-level').removeClass('active');
+
+});
+
 // preview img clicked = src max img
 $(document).ready(function () {
     var penImg = $('.product-image__max img');
@@ -253,7 +259,16 @@ $(document).mouseup(function (e){ // событие клика по веб-до�
 });
 
 // clone block
-if ($(".product-image__min").length){
-    $('.product-image__min').clone().appendTo('.block-preview-mobile .scroll-horizontal');
-}
+$(document).ready(function () {
+    if ($(".product-image__min").length){
+        $('.product-image__min').clone().appendTo('.block-preview-mobile .scroll-horizontal');
+    }
+});
+
+// mobile menu
+$('.btn-burger').on('click', function () {
+    $(this).toggleClass('burger-click');
+    $('.mobile-menu').fadeToggle();
+});
+
 
