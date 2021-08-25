@@ -199,6 +199,7 @@ $(document).ready(function() {
 $('.links-close-dropdown').on('click', function (e) {
     e.preventDefault();
     $(this).parents('.dropdown-mobile').removeClass('active');
+
 });
 
 // preview img clicked = src max img
@@ -222,7 +223,22 @@ $(document).ready(function () {
 // show block product text
 $('.read-more').on('click', function (e) {
     e.preventDefault();
-   $(this).siblings('.product-wrapper__info-list').toggleClass('open');
+    var $this = $(this),
+        content = $(this).parent().find('.product-wrapper__info-list');
+
+    if(!$this.hasClass('trigger')){
+        $this.addClass('trigger');
+        $this.html('Скрыть полное описание');
+
+        content.addClass('open');
+    } else {
+        $this.removeClass('trigger');
+        $this.html('Показать полное описание');
+
+        content.removeClass('open');
+    }
+
+    $('.product-wrapper-two').toggleClass('click-prev-block');
 });
 
 

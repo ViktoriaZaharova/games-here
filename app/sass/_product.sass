@@ -108,6 +108,11 @@
     background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(#1F2023,1) 100%)
     z-index: 1
 
+.product-wrapper__info-list.open
+  max-height: none
+  &:before
+    display: none
+
 .product-wrapper__info
   width: calc(100% - 378px)
   padding: 0 40px 0 0
@@ -217,6 +222,9 @@
     font-size: 30px
     font-weight: 600
 
+.click-prev-block
+  margin: 30px 0 0
+
 .product-image__min
   display: flex
   align-items: stretch
@@ -251,6 +259,8 @@
 .comments-product
   width: calc(100% - 517px)
   padding: 0 0 0 40px
+  h3
+    width: calc(100% - 378px)
   .tabs__caption
     justify-content: flex-start
     width: calc(100% - 378px)
