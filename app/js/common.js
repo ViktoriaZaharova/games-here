@@ -43,6 +43,9 @@ $(function () {
                         top: '50%'
                     }, 200);
             });
+
+        $('.product-wrapper__head').css('opacity', 0);
+        $('html, body').addClass('stop-scroll');
     });
 
     close.on('click', function () {
@@ -56,21 +59,13 @@ $(function () {
                     overlay.fadeOut(400);
                 }
             );
+        $('.product-wrapper__head').css('opacity', '100%');
+        $('html, body').removeClass('stop-scroll');
     });
 });
 //end
 
-// hover header box
-$(".js-tab-trigger").hover(function () {
-    var id = $(this).attr('data-tab'),
-        content = $('.js-tab-content[data-tab="' + id + '"]');
 
-    $('.js-tab-trigger.active').removeClass('active'); // 1
-    $(this).addClass('active'); // 2
-
-    $('.js-tab-content.active').removeClass('active'); // 3
-    content.addClass('active'); // 4
-});
 
 // amount
 $('.down').on("click", function () {
@@ -90,14 +85,14 @@ $('.up').on("click", function () {
 
 $('.btn-registration').on('click', function (e) {
     e.preventDefault();
-    $('.cabinet-box-entrance').fadeOut();
-    $('.cabinet-box-registration').fadeIn();
+    $('.cabinet-box-entrance').hide();
+    $('.cabinet-box-registration').show();
 });
 
 $('.btn-entrance').on('click', function (e) {
     e.preventDefault();
-    $('.cabinet-box-registration').fadeOut();
-    $('.cabinet-box-entrance').fadeIn();
+    $('.cabinet-box-registration').hide();
+    $('.cabinet-box-entrance').show();
 });
 
 // search mobile
@@ -205,7 +200,6 @@ $('.links-close-dropdown').on('click', function (e) {
 $('.links-close-mobile-menu').on('click', function (e) {
     e.preventDefault();
     $(this).parents('.mobile-menu-level').removeClass('active');
-
 });
 
 // preview img clicked = src max img
@@ -229,34 +223,49 @@ $(document).ready(function () {
 // show block product text
 $('.read-more').on('click', function (e) {
     e.preventDefault();
-    var $this = $(this),
-        content = $(this).parent().find('.product-wrapper__info-list');
+    var $this = $('.read-more'),
+        content = $('.product-wrapper__info-list');
 
     if(!$this.hasClass('trigger')){
         $this.addClass('trigger');
         $this.html('Скрыть полное описание');
 
         content.addClass('open');
+        $('.product-wrapper-two').addClass('click-prev-block');
     } else {
         $this.removeClass('trigger');
         $this.html('Показать полное описание');
 
         content.removeClass('open');
+        $('.product-wrapper-two').removeClass('click-prev-block');
     }
 
-    $('.product-wrapper-two').toggleClass('click-prev-block');
+
+});
+
+// hover header box
+$(".js-tab-trigger").hover(function () {
+    var id = $(this).attr('data-tab'),
+        content = $('.js-tab-content[data-id="' + id + '"]');
+
+    $('.js-tab-trigger.active').removeClass('active'); // 1
+    $(this).addClass('active'); // 2
+
+    $('.js-tab-content.active').removeClass('active'); // 3
+    content.addClass('active'); // 4
 });
 
 
 // событие клика за пределами блока
-$(document).mouseup(function (e){ // событие клика по веб-документу
+$(document).mouseup(function (e){ // событие hover по веб-документу
     var div = $(".js-tab-content"); // тут указываем ID элемента
-    if (!div.is(e.target) // если клик был не по нашему блоку
+    if (!div.is(e.target) // если hover был не по нашему блоку
         && div.has(e.target).length === 0) { // и не по его дочерним элементам
         div.removeClass('active'); // скрываем его
-        $('.js-tab-trigger').removeClass('active'); // скрываем его
+        $('.js-tab-trigger').removeClass('active');
     }
 });
+
 
 // clone block
 $(document).ready(function () {
@@ -269,6 +278,15 @@ $(document).ready(function () {
 $('.btn-burger').on('click', function () {
     $(this).toggleClass('burger-click');
     $('.mobile-menu').fadeToggle();
+});
+
+// header fixed
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 50) {
+        $('header').addClass('fixed');
+    } else {
+        $('header').removeClass('fixed');
+    }
 });
 
 

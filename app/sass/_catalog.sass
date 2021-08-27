@@ -22,6 +22,8 @@
   font-family: 'MyriadPro', sans-serif
   background-position: calc(100% - 20px) center
   margin: 0 40px 0 auto
+  height: 50px
+  border: 2px solid rgba(255, 255, 255, 0.2)
 
 .title-wrapper
   display: flex
@@ -36,7 +38,7 @@
   max-width: 120px
   width: 100%
   height: 50px
-  padding: 10px
+  padding: 0 10px
   border: 2px solid rgba(255, 255, 255, 0.2)
     radius: 25px
   li
@@ -48,10 +50,14 @@
     border-radius: 50%
     cursor: pointer
     transition: .3s ease
+    //padding: 3px
     .svg-icon
       width: 24px
       height: 24px
       fill: rgba(255, 255, 255, 0.5)
+    &:first-child
+      .svg-icon
+        margin: 0 0 0 -0.5px
   .active
     background: $accent
     .svg-icon
@@ -329,11 +335,17 @@
   display: flex
   align-items: center
   height: auto
+  overflow: visible
   .product-card__img
     height: 300px
     max-width: 230px
     border-radius: 20px
     overflow: hidden
+    margin: -2px 0 -2px -2px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
     &:before
       display: none
   .product-card__body

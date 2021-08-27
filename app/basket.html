@@ -410,12 +410,12 @@
       </div>
 
       <div class="header-box">
-        <a href="#" class="header-link header-link-cabinet js-tab-trigger" data-tab="tab2">
+        <a href="#" class="header-link header-link-cabinet">
           <svg class="svg-icon">
             <use xlink:href="img/sprite.svg#user"></use>
           </svg>
         </a>
-        <a href="basket.html" class="header-link header-link-basket js-tab-trigger" data-tab="tab1">
+        <a href="basket.html" class="header-link header-link-basket">
           <svg class="svg-icon">
             <use xlink:href="img/sprite.svg#basket"></use>
           </svg>
@@ -431,181 +431,6 @@
             <option value="РУБ ₽">РУБ ₽</option>
             <option value="USD $">USD $</option>
           </select>
-        </div>
-
-        <div class="dropdown-box dropdown-box-basket js-tab-content" data-tab="tab1">
-          <div class="dropdown-box__header">
-            <h3>Корзина</h3>
-            <a href="#" class="color-grey links-clear">Очистить корзину</a>
-          </div>
-          <div class="dropdown-box__body">
-            <div class="scroll-vertical">
-              <div class="basket-card" itemscope itemtype="http://schema.org/Product">
-                <a href="#" class="btn-close-card">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#close"></use>
-                  </svg>
-                </a>
-                <a href="product.html" class="basket-card__img" itemprop="image"><img src="img/basket1.png" alt=""></a>
-                <div class="basket-card__body">
-                  <div class="basket-card__top">
-                    <a href="product.html" class="basket-card__title" itemprop="name">CYBERPUNK 2077</a>
-                    <ul class="list-characteristics">
-                      <li>
-                        <p>Регион активации:</p><span class="color-accent">Россия</span>
-                      </li>
-                      <li><p>Сервис активации:</p><span class="color-accent">Steam</span></li>
-                    </ul>
-                  </div>
-                  <div class="basket-card__bottom" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
-                    <meta itemprop="price" content="1999">
-                    <meta itemprop="priceCurrency" content="RUB">
-                    <div class="price color-accent">1999 ₽</div>
-                    <div class="amount">
-                      <span class="down">-</span>
-                      <input type="text" value="1"/>
-                      <span class="up">+</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="basket-card" itemscope itemtype="http://schema.org/Product">
-                <a href="#" class="btn-close-card">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#close"></use>
-                  </svg>
-                </a>
-                <a href="product.html" class="basket-card__img" itemprop="image"><img src="img/product4.png" alt=""></a>
-                <div class="basket-card__body">
-                  <div class="basket-card__top">
-                    <a href="product.html" class="basket-card__title" itemprop="name">Kingdom Come: Deliverance</a>
-                    <ul class="list-characteristics">
-                      <li>
-                        <p>Регион активации:</p><span class="color-accent">Россия</span>
-
-                      </li>
-                      <li><p>Сервис активации:</p><span class="color-accent">Steam</span></li>
-                    </ul>
-                  </div>
-                  <div class="basket-card__bottom" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
-                    <meta itemprop="price" content="1999">
-                    <meta itemprop="priceCurrency" content="RUB">
-                    <div class="price color-accent">1999 ₽</div>
-                    <div class="amount">
-                      <span class="down">-</span>
-                      <input type="text" value="1"/>
-                      <span class="up">+</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="basket-card" itemscope itemtype="http://schema.org/Product">
-                <a href="#" class="btn-close-card">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#close"></use>
-                  </svg>
-                </a>
-                <a href="product.html" class="basket-card__img" itemprop="image"><img src="img/product5.png" alt=""></a>
-                <div class="basket-card__body">
-                  <div class="basket-card__top">
-                    <a href="product.html" class="basket-card__title" itemprop="name">Star Wars: Battlefront 2 (Classic,
-                      2005)</a>
-                    <ul class="list-characteristics">
-                      <li>
-                        <p>Регион активации:</p><span class="color-accent">Россия</span>
-
-                      </li>
-                      <li><p>Сервис активации:</p><span class="color-accent">Steam</span></li>
-                    </ul>
-                  </div>
-                  <div class="basket-card__bottom" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
-                    <meta itemprop="price" content="1999">
-                    <meta itemprop="priceCurrency" content="RUB">
-                    <div class="price color-accent">1999 ₽</div>
-                    <div class="amount">
-                      <span class="down">-</span>
-                      <input type="text" value="1"/>
-                      <span class="up">+</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="dropdown-box__footer">
-            <div class="total-sum">
-              <p>Сумма покупок:</p>
-              <div class="sum-val">44444 ₽</div>
-            </div>
-            <a href="#" class="btn btn-accent">Оформить заказ</a>
-          </div>
-        </div>
-
-        <div class="dropdown-box js-tab-content" data-tab="tab2">
-
-          <div class="dropdown-box__body">
-            <div class="cabinet-box-wrapper cabinet-box-entrance">
-              <div class="cabinet-box">
-                <div class="cabinet-box__title">
-                  <h3>Вход в личный кабинет</h3>
-                </div>
-
-                <div class="cabinet-box__body">
-                  <form method="post" class="form-cabinet">
-                    <label>
-                      <input type="text" placeholder="Введите E-mail" name="mail">
-                    </label>
-                    <label><input type="text" placeholder="Введите пароль" name="password"></label>
-                    <a href="#" class="color-grey links-form">Забыли пароль?</a>
-                    <button type="submit" class="btn btn-accent">Войти в кабинет</button>
-                  </form>
-                </div>
-              </div>
-
-              <div class="cabinet-box__footer">
-                <p>Первый раз здесь?</p>
-                <a href="#" class="btn btn-white btn-registration">Зарегистрироваться</a>
-              </div>
-            </div>
-
-            <div class="cabinet-box-wrapper cabinet-box-registration">
-              <div class="cabinet-box">
-                <div class="cabinet-box__title">
-                  <h3>Регистрация</h3>
-                </div>
-
-                <div class="cabinet-box__body">
-                  <form method="post" class="form-cabinet">
-                    <div class="tabs">
-                      <ul class="tabs__caption">
-                        <li class="active">Покупатель</li>
-                        <li>Продавец</li>
-                      </ul>
-                      <div class="tabs__content active">
-                        <label>
-                          <input type="text" placeholder="Введите E-mail" name="mail">
-                        </label>
-                        <label><input type="text" placeholder="Введите пароль" name="password"></label>
-                      </div>
-                      <div class="tabs__content">
-                        <label>
-                          <input type="text" placeholder="Введите E-mail" name="mail">
-                        </label>
-                        <label><input type="text" placeholder="Введите пароль" name="password"></label>
-                      </div>
-                    </div>
-
-                    <button type="submit" class="btn btn-accent">Создать аккаунт</button>
-                  </form>
-                </div>
-              </div>
-
-              <div class="cabinet-box__footer">
-                <p>Уже есть аккаунт?</p>
-                <a href="#" class="btn btn-white btn-entrance">Войти в кабинет</a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -674,7 +499,7 @@
                   <meta itemprop="priceCurrency" content="RUB">
                   <div class="price color-accent">1999 ₽</div>
                   <div class="amount">
-                    <span class="down">-</span>
+                    <span class="down"></span>
                     <input type="text" value="1"/>
                     <span class="up">+</span>
                   </div>
@@ -703,7 +528,7 @@
                   <meta itemprop="priceCurrency" content="RUB">
                   <div class="price color-accent">1999 ₽</div>
                   <div class="amount">
-                    <span class="down">-</span>
+                    <span class="down"></span>
                     <input type="text" value="1"/>
                     <span class="up">+</span>
                   </div>
@@ -732,7 +557,7 @@
                   <meta itemprop="priceCurrency" content="RUB">
                   <div class="price color-accent">1999 ₽</div>
                   <div class="amount">
-                    <span class="down">-</span>
+                    <span class="down"></span>
                     <input type="text" value="1"/>
                     <span class="up">+</span>
                   </div>
@@ -761,7 +586,7 @@
                   <meta itemprop="priceCurrency" content="RUB">
                   <div class="price color-accent">1999 ₽</div>
                   <div class="amount">
-                    <span class="down">-</span>
+                    <span class="down"></span>
                     <input type="text" value="1"/>
                     <span class="up">+</span>
                   </div>
@@ -790,7 +615,7 @@
                   <meta itemprop="priceCurrency" content="RUB">
                   <div class="price color-accent">1999 ₽</div>
                   <div class="amount">
-                    <span class="down">-</span>
+                    <span class="down"></span>
                     <input type="text" value="1"/>
                     <span class="up">+</span>
                   </div>
@@ -991,7 +816,7 @@
         <li><img src="img/yandex-money.svg" alt=""></li>
         <li><img src="img/qiwi.svg" alt=""></li>
       </ul>
-      <div class="copyright">GAMESHERE.BY © 2020</div>
+      <div class="copyright">GAMESHERE.BY © 2021</div>
       <a href="#" class="developer">Разработка сайта: Tangata.by</a>
     </div>
   </div>

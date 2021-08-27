@@ -84,6 +84,9 @@ body {
 html, body {
   overflow-x: hidden; }
 
+.stop-scroll {
+  overflow: hidden; }
+
 img {
   display: block;
   max-width: 100%;
@@ -150,7 +153,8 @@ button {
           box-shadow: none;
   cursor: pointer;
   -webkit-transition: .3s ease;
-  transition: .3s ease; }
+  transition: .3s ease;
+  font-family: "Montserrat", sans-serif; }
   button:hover, button:focus {
     outline: none; }
 
@@ -175,7 +179,8 @@ button {
   font-weight: bold;
   width: -webkit-fit-content;
   width: -moz-fit-content;
-  width: fit-content; }
+  width: fit-content;
+  font-family: "Montserrat", sans-serif; }
   .btn .svg-icon {
     margin: 0 14px 0 0;
     width: 20px;
@@ -405,7 +410,7 @@ main .btn {
 .main-slider {
   position: relative; }
   .main-slider .container {
-    margin: auto 0 0; }
+    margin: auto auto 0; }
 
 .swiper-container .swiper-pagination {
   position: absolute;
@@ -795,18 +800,20 @@ main .btn {
 header {
   background: #2D2F34;
   z-index: 5;
-  position: relative; }
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%; }
   header .logo {
     margin: 0 100px 0 0; }
   header .btn {
     height: 60px; }
 
 .header {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
   background: transparent; }
+
+.fixed {
+  background: #2D2F34; }
 
 .header-top {
   padding: 20px 0 15px; }
@@ -1132,6 +1139,7 @@ footer {
   max-width: 418px;
   width: 100%; }
   .footer-box .box-text {
+    max-width: 416px;
     color: #F0F0F3;
     font-size: 10px;
     opacity: .8;
@@ -1355,7 +1363,7 @@ footer {
   border-radius: 0 0 20px 20px;
   background: #1F2023;
   z-index: 2;
-  width: 420px;
+  width: 425px;
   padding: 212px 30px 40px; }
   .dropdown-box__header {
     padding: 0 0 20px;
@@ -1399,12 +1407,13 @@ footer {
       margin: 20px auto 0; }
   .dropdown-box h3 {
     font-size: 20px;
-    font-weight: 600; }
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif; }
   .dropdown-box__body {
     padding: 0; }
 
 .dropdown-box-basket .dropdown-box__body {
-  padding: 20px 0 95px; }
+  padding: 20px 0 120px; }
 
 .total-sum {
   width: 100%;
@@ -1600,8 +1609,13 @@ footer {
     padding: 0;
     font-size: 18px;
     font-weight: 700;
-    color: #fff; }
+    color: #fff;
+    pointer-events: none; }
   .amount span {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1619,13 +1633,24 @@ footer {
     font-size: 36px;
     font-weight: 600;
     line-height: 1;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .amount span:hover {
       background: #FFC608;
       border-color: #FFC608;
       color: #1F2023; }
   .amount .up {
     font-size: 30px; }
+  .amount .down:before {
+    content: '-';
+    font-size: 36px;
+    left: 50%;
+    top: 45%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-weight: 600;
+    line-height: 1; }
 
 .js-tab-content.active {
   display: block; }
@@ -1667,6 +1692,9 @@ footer {
     font-weight: 500;
     margin: 40px auto 0; }
     .cabinet-box__footer .btn {
+      height: 50px;
+      max-width: 300px;
+      width: 100%;
       margin: 14px auto 0; }
 
 .form-cabinet {
@@ -1695,7 +1723,8 @@ footer {
     height: 50px;
     font-size: 20px;
     font-weight: 600;
-    color: #2B2A29; }
+    color: #2B2A29;
+    max-width: 300px; }
   .form-cabinet .tabs__caption {
     font-size: 18px;
     font-weight: 500;
@@ -1846,6 +1875,9 @@ footer {
 .btn-opacity {
   opacity: .2; }
 
+.btn-opacity2 {
+  opacity: .05; }
+
 #modalQuestion3 .btn-next-modal {
   margin: -60px 0 0 auto; }
 
@@ -1977,10 +2009,10 @@ footer {
   src: url("../fonts/MyriadPro/MyriadPro-SemiExt.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadPro-SemiExt.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-SemiExt.ttf") format("truetype"); }
 
 .page-section {
-  padding: 40px 0 0; }
+  padding: 220px 0 0; }
 
 .page-404 {
-  margin: 40px 0 0; }
+  padding: 260px 0 0; }
   .page-404 h1 {
     font-size: 60px; }
   .page-404 .container {
@@ -2006,7 +2038,10 @@ footer {
       font-size: 30px;
       font-weight: 600; }
   .page-404 .btn {
-    margin: 0 auto; }
+    margin: 0 auto;
+    height: 60px;
+    max-width: 224px;
+    width: 100%; }
 
 .page-500 {
   margin: 80px 0 40px; }
@@ -2197,8 +2232,10 @@ footer {
   .form-basket .amount input {
     border: none;
     padding: 0; }
-  .form-basket .scroll-vertical::-webkit-scrollbar-track-piece, .form-basket .scroll-vertical::-webkit-scrollbar-corner {
-    background: #2D2F34; }
+  .form-basket .scroll-vertical {
+    max-height: 622px; }
+    .form-basket .scroll-vertical::-webkit-scrollbar-track-piece, .form-basket .scroll-vertical::-webkit-scrollbar-corner {
+      background: #2D2F34; }
   .form-basket .basket-card__img {
     width: 100px; }
   .form-basket .basket-card__body {
@@ -2225,12 +2262,16 @@ footer {
       flex-wrap: wrap;
   padding: 30px; }
   .form-basket__total .total-sum {
+    font-size: 30px;
     width: auto; }
   .form-basket__total .sum-val {
     margin: 0 0 0 15px;
     font-weight: bold; }
   .form-basket__total .btn {
-    margin: 0 0 0 auto; }
+    margin: 0 0 0 auto;
+    height: 60px;
+    width: 100%;
+    max-width: 266px; }
 
 .form-basket__body {
   background: #2D2F34;
@@ -2333,7 +2374,9 @@ footer {
        text-align-last: center;
   font-family: 'MyriadPro', sans-serif;
   background-position: calc(100% - 20px) center;
-  margin: 0 40px 0 auto; }
+  margin: 0 40px 0 auto;
+  height: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.2); }
 
 .title-wrapper {
   display: -webkit-box;
@@ -2360,7 +2403,7 @@ footer {
   max-width: 120px;
   width: 100%;
   height: 50px;
-  padding: 10px;
+  padding: 0 10px;
   border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 25px; }
   .tabs-group li {
@@ -2383,6 +2426,8 @@ footer {
       width: 24px;
       height: 24px;
       fill: rgba(255, 255, 255, 0.5); }
+    .tabs-group li:first-child .svg-icon {
+      margin: 0 0 0 -0.5px; }
   .tabs-group .active {
     background: #FFC608; }
     .tabs-group .active .svg-icon {
@@ -2710,12 +2755,19 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: auto; }
+  height: auto;
+  overflow: visible; }
   .product-card-row .product-card__img {
     height: 300px;
     max-width: 230px;
     border-radius: 20px;
-    overflow: hidden; }
+    overflow: hidden;
+    margin: -2px 0 -2px -2px; }
+    .product-card-row .product-card__img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
     .product-card-row .product-card__img:before {
       display: none; }
   .product-card-row .product-card__body {
@@ -2859,6 +2911,9 @@ footer {
       flex-wrap: wrap; }
   .product-wrapper__bottom .btn {
     height: 60px;
+    max-width: 205px;
+    width: 100%;
+    padding: 0 10px;
     margin: 0 30px 0 0; }
     .product-wrapper__bottom .btn:last-child {
       margin: 0; }
@@ -2934,7 +2989,8 @@ footer {
   width: 100%;
   background: #2D2F34;
   border-radius: 10px;
-  padding: 30px; }
+  padding: 30px;
+  position: relative; }
   .characteristics-product .list-characteristics {
     font-size: 18px; }
     .characteristics-product .list-characteristics li {
@@ -2945,7 +3001,9 @@ footer {
     margin: 20px 0 0; }
     .characteristics-product .form-cabinet button {
       font-size: 16px;
-      font-weight: 500; }
+      font-weight: 500;
+      padding: 10px 15px;
+      height: auto; }
     .characteristics-product .form-cabinet label {
       margin: 0 0 20px; }
     .characteristics-product .form-cabinet input {
@@ -3026,7 +3084,7 @@ footer {
     font-weight: 600; }
 
 .click-prev-block {
-  margin: 30px 0 0; }
+  margin: -20px 0 0; }
 
 .product-image__min {
   display: -webkit-box;
@@ -3122,7 +3180,8 @@ footer {
     width: calc(100% - 245px);
     margin: 0 auto 0 0; }
   .form-comment textarea {
-    margin: 138px 0 0; }
+    margin: 138px 0 0;
+    resize: none; }
   .form-comment button.btn {
     padding: 0 45px;
     margin: auto 0 0 0; }
@@ -3446,7 +3505,13 @@ footer {
   .btn-question {
     left: 10px; }
   .product-wrapper__bottom .availability {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .product-wrapper-two {
+    margin: -70px 0 0; } }
+
+@media only screen and (max-width: 1450px) {
+  .footer-menu, .footer-menu .btn {
+    font-size: 16px; } }
 
 @media only screen and (max-width: 1420px) {
   .logo {
@@ -3465,8 +3530,6 @@ footer {
     margin: 0 20px 0 0; }
   .form-search {
     max-width: 350px; }
-  .footer-menu, .footer-menu .btn {
-    font-size: 16px; }
   .footer-menu li {
     padding: 5px; }
   .form-basket-products {
@@ -3483,7 +3546,14 @@ footer {
   #modalQuestion3 .btn-next-modal, .btn-next-modal {
     margin: 30px 0 0 auto; }
   .product-wrapper__bottom .btn.btn-report:last-child {
-    margin: 20px 0 0; } }
+    margin: 20px 0 0; }
+  .form-basket__total .btn {
+    max-width: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+  .form-basket__total .total-sum {
+    font-size: 24px; } }
 
 @media only screen and (max-width: 1340px) {
   .footer-bottom {
@@ -3945,7 +4015,11 @@ footer {
   textarea {
     font-size: 18px; }
   .product-wrapper__bottom .availability {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .page-section {
+    padding: 180px 0 0; }
+  .header-bottom {
+    padding: 15px 0 0; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -4014,7 +4088,9 @@ footer {
   .h1-title {
     font-size: 50px; }
   .list-row li {
-    margin: 0 20px 20px 0; } }
+    margin: 0 20px 20px 0; }
+  .btn-question {
+    display: none; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 640px) {
@@ -4186,8 +4262,8 @@ footer {
     .links-prev__icon .svg-icon {
       width: 8px;
       height: 12px; }
-  .page-404 {
-    margin: 0; }
+  .page-section {
+    padding: 160px 0 0; }
   h1, .page-404 h1 {
     font-size: 20px;
     margin: 0 auto 20px; }
@@ -4197,7 +4273,7 @@ footer {
     width: calc(100% - 80px); }
   .form-basket__body {
     padding: 20px; }
-  .similar-products, .comments-product .tabs__caption, .bonus, .btn-question {
+  .similar-products, .comments-product .tabs__caption, .bonus {
     display: none; }
   .comments-product h3 {
     display: none; }

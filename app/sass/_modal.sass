@@ -111,7 +111,7 @@
   border-radius: 0 0 20px 20px
   background: #1F2023
   z-index: 2
-  width: 420px
+  width: 425px
   padding: 212px 30px 40px
   &__header
     padding: 0 0 20px
@@ -146,16 +146,16 @@
       font-size: 20px
       font-weight: 600
       margin: 20px auto 0
-
   h3
     font-size: 20px
     font-weight: 600
+    font-family: $default-font
   &__body
     padding: 0
 
 .dropdown-box-basket
   .dropdown-box__body
-    padding: 20px 0 95px
+    padding: 20px 0 120px
 
 .total-sum
   width: 100%
@@ -177,6 +177,8 @@
 .scroll-vertical
   overflow-y: auto
   max-height: 399px
+  //scrollbar-color: #fff #1F2023
+  //scrollbar-width: 4px
   &::-webkit-scrollbar
     width: 4px
     height: 4px
@@ -303,7 +305,9 @@
     font-size: 18px
     font-weight: 700
     color: #fff
+    pointer-events: none
   span
+    user-select: none
     display: flex
     align-items: center
     justify-content: center
@@ -316,12 +320,23 @@
     font-weight: 600
     line-height: 1
     cursor: pointer
+    position: relative
     &:hover
       background: $accent
       border-color: $accent
       color: #1F2023
   .up
     font-size: 30px
+  .down
+    &:before
+      content: '-'
+      font-size: 36px
+      left: 50%
+      top: 45%
+      position: absolute
+      transform: translate(-50%,-50%)
+      font-weight: 600
+      line-height: 1
 
 
 .js-tab-content.active
@@ -362,6 +377,9 @@
     font-weight: 500
     margin: 40px auto 0
     .btn
+      height: 50px
+      max-width: 300px
+      width: 100%
       margin: 14px auto 0
 
 .form-cabinet
@@ -385,6 +403,7 @@
     font-size: 20px
     font-weight: 600
     color: #2B2A29
+    max-width: 300px
   .tabs__caption
     font-size: 18px
     font-weight: 500
@@ -512,6 +531,9 @@
 
 .btn-opacity
   opacity: .2
+
+.btn-opacity2
+  opacity: .05
 
 #modalQuestion3
   .btn-next-modal

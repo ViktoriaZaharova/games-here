@@ -76,6 +76,9 @@ body
 html, body
   overflow-x: hidden
 
+.stop-scroll
+  overflow: hidden
+
 img
   display: block
   max-width: 100%
@@ -130,6 +133,7 @@ button
   box-shadow: none
   cursor: pointer
   transition: .3s ease
+  font-family: $default-font
   &:hover, &:focus
     outline: none
 
@@ -146,6 +150,7 @@ button
   font-size: 20px
   font-weight: bold
   width: fit-content
+  font-family: $default-font
   .svg-icon
     margin: 0 14px 0 0
     width: 20px
@@ -344,7 +349,7 @@ main
 .main-slider
   position: relative
   .container
-    margin: auto 0 0
+    margin: auto auto 0
 
 .swiper-container
   .swiper-pagination
