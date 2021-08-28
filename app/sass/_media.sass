@@ -52,6 +52,9 @@
   .footer-menu, .footer-menu .btn
     font-size: 16px
 
+  .dropdown-box
+    width: 410px
+
 @media only screen and (max-width: 1420px)
   .logo
     font-size: 40px
@@ -574,10 +577,10 @@
   .catalog-filter-mobile
     display: flex
 
-  .catalog-tab
+  .catalog-tab.active
     display: block
 
-  .catalog-tab.active
+  .catalog-tab
     display: none
 
   .btn-play
@@ -647,6 +650,15 @@
   .header-bottom
     padding: 15px 0 0
 
+  .products-section-no-slider
+    padding: 130px 0 0
+
+  .btn-filter-save
+    display: flex
+    margin: 20px auto 0
+    width: 100%
+    height: 40px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
   .col-3
@@ -662,7 +674,7 @@
       border-radius: 10px
 
   .modal-body .col-5
-    width: 50%
+    width: 33.3%
 
   .category-box
     margin: 0 0 20px
@@ -744,6 +756,9 @@
 
   .btn-question
     display: none
+
+  .header-bottom .container
+    overflow-x: scroll
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 640px)
@@ -947,7 +962,7 @@
   .form-basket__body
     padding: 20px
 
-  .similar-products, .comments-product .tabs__caption, .bonus
+  .similar-products, .bonus
     display: none
 
   .comments-product
@@ -1040,6 +1055,19 @@
     &:last-child
       margin: 0 10px 20px
 
+  .catalog-content .product-card__body
+    padding: 10px
+
+  .product-wrapper__info-list
+    max-height: 450px
+
+  .menu li:last-child
+    order: -1
+    margin: 0 20px 0 0
+
+  .menu li:nth-last-child(2)
+    margin: 0
+
 @media only screen and (max-width: 480px)
   .w-25
     width: 100%
@@ -1049,11 +1077,62 @@
     &:nth-last-child(2)
       border-bottom: 2px solid rgba(255, 255, 255, 0.2)
 
+  .product-wrapper__info-list
+    max-height: 500px
+
+  .form-comment textarea
+    margin: 0
+
+  .page-404 .btn
+    position: absolute
+    left: 50%
+    bottom: 0
+    transform: translate(-50%,0)
+
+  .page-404__img
+    margin: 30px auto 60px
 
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 420px)
+  .modal-body .col-5
+    width: 50%
+
+  .modal__wrapper .logo
+    font-size: 30px
+
+  .modal__wrapper h3
+    font-size: 20px
+
+  .list-category
+    font-size: 14px
+
+  .category-box h4
+    font-size: 16px
+    margin: 0 0 10px
+
+
+  .modal-body
+    padding: 20px 0 0
+
+  .modal__wrapper
+    padding: 30px
+
+
+@media only screen and (max-width: 380px)
+  .main-slider-item__bottom
+    max-width: 300px
+    .btn
+      margin: 15px 0 0
+
 @media only screen and (max-width: 350px)
   .product-card
     height: 320px
 
   main .btn
     margin: 10px 0 0
+
+  .product-wrapper__info-list
+    max-height: 550px
+
+
+

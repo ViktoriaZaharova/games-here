@@ -1,10 +1,8 @@
 // slider
 const swiper = new Swiper('.main-slider', {
-    // Optional parameters
-    // direction: 'vertical',
     loop: true,
+    touchStartPreventDefault: false,
     effect: "fade",
-    // If we need pagination
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -104,6 +102,13 @@ $('.btn-open-search').on('click', function () {
 $('.overlay').on('click', function () {
     $('.form-search-mobile').fadeOut();
     $('.search-result').css('display', 'none');
+    $('.overlay').fadeOut();
+});
+
+$('.search-result-next').on('click', function () {
+    $('.form-search-mobile').fadeOut();
+    $('.search-result').css('display', 'none');
+    $('.overlay').fadeOut();
 });
 
 $('.form-search input').focus(function () {
@@ -246,7 +251,7 @@ $('.read-more').on('click', function (e) {
 // hover header box
 $(".js-tab-trigger").hover(function () {
     var id = $(this).attr('data-tab'),
-        content = $('.js-tab-content[data-id="' + id + '"]');
+        content = $('.js-tab-content[data-tab="' + id + '"]');
 
     $('.js-tab-trigger.active').removeClass('active'); // 1
     $(this).addClass('active'); // 2
@@ -255,24 +260,23 @@ $(".js-tab-trigger").hover(function () {
     content.addClass('active'); // 4
 });
 
-
 // событие клика за пределами блока
-$(document).mouseup(function (e){ // событие hover по веб-документу
+$(document).mouseup(function (e){ // событие click по веб-документу
     var div = $(".js-tab-content"); // тут указываем ID элемента
-    if (!div.is(e.target) // если hover был не по нашему блоку
+    // var slider = $('.swiper-container');
+    if (!div.is(e.target) // если click был не по нашему блоку
         && div.has(e.target).length === 0) { // и не по его дочерним элементам
         div.removeClass('active'); // скрываем его
         $('.js-tab-trigger').removeClass('active');
     }
+
+    // if (slider.is(e.target) // если click был не по нашему блоку
+    //     && div.has(e.target).length === 0) { // и не по его дочерним элементам
+    //     div.removeClass('active'); // скрываем его
+    //     $('.js-tab-trigger').removeClass('active');
+    // }
 });
 
-
-// clone block
-$(document).ready(function () {
-    if ($(".product-image__min").length){
-        $('.product-image__min').clone().appendTo('.block-preview-mobile .scroll-horizontal');
-    }
-});
 
 // mobile menu
 $('.btn-burger').on('click', function () {

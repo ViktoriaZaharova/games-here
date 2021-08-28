@@ -109,6 +109,10 @@ input, textarea, select
   background: transparent
   cursor: pointer
   transition: .3s ease
+  border-radius: 0
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
 
 textarea
   border: none
@@ -136,6 +140,7 @@ button
   font-family: $default-font
   &:hover, &:focus
     outline: none
+    box-shadow: none
 
 .btn
   display: flex
@@ -155,6 +160,9 @@ button
     margin: 0 14px 0 0
     width: 20px
     height: 20px
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
 
 .btn-accent
   background: $accent
@@ -346,6 +354,9 @@ main
     height: 60px
     margin: 0
 
+.swiper-pointer-events
+  touch-action: auto
+
 .main-slider
   position: relative
   .container
@@ -517,6 +528,7 @@ main
     justify-content: center
     position: relative
     z-index: 1
+    overflow: hidden
     &:before
       content: ''
       position: absolute
@@ -528,9 +540,9 @@ main
     img
       max-height: 100%
       width: 100%
-      //height: 100%
-      //object-fit: cover
-      //display: block
+      height: 100%
+      object-fit: cover
+      display: block
   .sale
     position: absolute
     bottom: 20px
@@ -560,6 +572,7 @@ main
     display: flex
     align-items: center
     justify-content: space-between
+    margin: auto 0 0
   .price
     margin: 0
     font-size: 24px
@@ -650,6 +663,8 @@ main
     height: 3px
     bottom: 6px
 
+.products-section-no-slider
+  padding: 220px 0 0
 
 @import "header"
 @import "footer"
