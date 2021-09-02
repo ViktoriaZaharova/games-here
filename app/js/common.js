@@ -158,15 +158,19 @@ $(".btn-tab-click").click(function (e) {
 
 // accordeon
 function accordeon() {
-    var panel = $('.panel_heading');
-
-    if (panel.hasClass('in')) {
-        $('.in').find('.block_hover').slideDown();
-    }
 
     $('.panel_heading .block_title').on('click', function () {
-        $(this).parent().toggleClass('in').find('.block_hover').slideToggle();
+        $('.panel_heading').removeClass('in').find('.block_hover').slideUp();
+        $(this).parent().addClass('in').find('.block_hover').slideDown();
     });
+
+    // var panel = $('.panel_heading');
+    //
+    // if (panel.hasClass('in')) {
+    //     $('.in').find('.block_hover').slideDown();
+    // } else {
+    //     $('.panel_heading').find('.block_hover').slideUp();
+    // }
 }
 
 accordeon();
@@ -208,22 +212,22 @@ $('.links-close-mobile-menu').on('click', function (e) {
 });
 
 // preview img clicked = src max img
-$(document).ready(function () {
-    var penImg = $('.product-image__max img');
-    var linksImg = $('.product-image__max a');
-
-    $('.product-image__min div.item').on('click', function () {
-        $('.product-image__min div.item').removeClass('click-item');
-        $(this).addClass('click-item');
-        var imgPath;
-
-        imgPath = $(this).attr('data-img-path');
-
-        penImg.attr('src', imgPath);
-        linksImg.attr('href', imgPath);
-
-    });
-});
+// $(document).ready(function () {
+//     var penImg = $('.product-image__max img');
+//     var linksImg = $('.product-image__max a');
+//
+//     $('.product-image__min div.item').on('click', function () {
+//         $('.product-image__min div.item').removeClass('click-item');
+//         $(this).addClass('click-item');
+//         var imgPath;
+//
+//         imgPath = $(this).attr('data-img-path');
+//
+//         penImg.attr('src', imgPath);
+//         linksImg.attr('href', imgPath);
+//
+//     });
+// });
 
 // show block product text
 $('.read-more').on('click', function (e) {
@@ -270,11 +274,6 @@ $(document).mouseup(function (e){ // событие click по веб-докум
         $('.js-tab-trigger').removeClass('active');
     }
 
-    // if (slider.is(e.target) // если click был не по нашему блоку
-    //     && div.has(e.target).length === 0) { // и не по его дочерним элементам
-    //     div.removeClass('active'); // скрываем его
-    //     $('.js-tab-trigger').removeClass('active');
-    // }
 });
 
 
@@ -287,9 +286,9 @@ $('.btn-burger').on('click', function () {
 // header fixed
 $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
-        $('header').addClass('fixed');
+        $('.header').css('background', '#2D2F34');
     } else {
-        $('header').removeClass('fixed');
+        $('.header').css('background', 'transparent');
     }
 });
 

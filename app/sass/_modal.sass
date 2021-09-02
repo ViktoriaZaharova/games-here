@@ -188,16 +188,20 @@
     border-radius: 20px
   &::-webkit-scrollbar-track-piece
     background-color: #1F2023
-    border-radius: 20px
+    //border-radius: 20px
   &::-webkit-scrollbar-thumb
     background-color: #fff
     border-radius: 20px
   &::-webkit-scrollbar-corner
     background-color: #1F2023
-    border-radius: 20px
+    //border-radius: 20px
   &::-webkit-resizer
     background-color: #fff
-    border-radius: 20px
+    //border-radius: 20px
+  &::-webkit-scrollbar-button:vertical:start:decrement, &::-webkit-scrollbar-button:vertical:end:increment, &::-webkit-scrollbar-button:horizontal:start:decrement, &::-webkit-scrollbar-button:horizontal:end:increment
+    background: transparent
+    width: 0
+    display: none
 
 
 .basket-card
@@ -459,6 +463,7 @@
 //modal-question
 .modal-question
   max-width: 1670px
+  transform: translate(-50%,-58%)
   .modal__wrapper
     border-radius: 0
     background: transparent
@@ -478,6 +483,9 @@
     margin: 80px 0 0
     .btn
       width: 100%
+
+#modalQuestion3
+  transform: translate(-50%,-50%)
 
 .modal-question-content
   width: 100%
@@ -503,12 +511,15 @@
   height: 163px
   background: url("../img/figure.svg") no-repeat center
     size: 100%
-  padding: 15px 15px
+  padding: 15px 15px 45px
   font-weight: bold
   font-size: 20px
   right: 0
   top: 0
   text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
 
 .modal-question-text
   width: calc(100% - 491px)
