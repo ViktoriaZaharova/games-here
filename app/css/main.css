@@ -16,7 +16,13 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent; }
   *:before, *:after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
@@ -82,7 +88,8 @@ body {
   color: #fff; }
 
 html, body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  height: 100%; }
 
 .stop-scroll {
   overflow: hidden; }
@@ -677,7 +684,7 @@ main .btn {
     font-size: 18px;
     font-weight: bold; }
   .product-card__body {
-    padding: 10px 20px 20px;
+    padding: 10px 10px 20px;
     text-align: center;
     height: calc(100% - 400px);
     display: -webkit-box;
@@ -707,7 +714,7 @@ main .btn {
     margin: auto 0 0; }
   .product-card .price {
     margin: 0;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold; }
   .product-card .btn {
     font-size: 18px;
@@ -1950,6 +1957,7 @@ footer {
   left: 0;
   top: 0;
   width: 100%;
+  height: 100%;
   z-index: 5;
   padding: 222px 0 105px;
   display: none;
@@ -2059,7 +2067,7 @@ footer {
   src: url("../fonts/MyriadPro/MyriadPro-SemiExt.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadPro-SemiExt.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-SemiExt.ttf") format("truetype"); }
 
 .page-section {
-  padding: 220px 0 0; }
+  padding: 220px 0 80px; }
 
 .page-404 {
   padding: 260px 0 0; }
@@ -3578,15 +3586,15 @@ footer {
     margin: 20px 0 0; }
   #modalQuestion3 {
     -webkit-transform: translate(-50%, -55%);
-            transform: translate(-50%, -55%); } }
+            transform: translate(-50%, -55%); }
+  .dropdown-box .scroll-vertical {
+    height: 260px; } }
 
 @media only screen and (max-width: 1450px) {
   .footer-menu, .footer-menu .btn {
     font-size: 16px; }
   .dropdown-box {
-    width: 410px; }
-    .dropdown-box .scroll-vertical {
-      height: 300px; } }
+    width: 410px; } }
 
 @media only screen and (max-width: 1420px) {
   .logo {
@@ -3995,15 +4003,16 @@ footer {
   .sidebar {
     display: none; }
   .dropdown-mobile {
-    padding: 20px 15px;
-    position: absolute;
+    padding: 148px 15px 20px;
+    position: fixed;
     left: 0;
-    top: -30px;
+    top: 0;
     z-index: 2;
     background: #1F2023;
     max-width: none;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    overflow-y: auto; }
     .dropdown-mobile h2 {
       text-align: left;
       margin: 0;
@@ -4194,7 +4203,6 @@ footer {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 640px) {
   .product-card {
-    height: 300px;
     margin: 0 0 20px;
     border-radius: 10px; }
     .product-card__img {
@@ -4218,7 +4226,7 @@ footer {
     .product-card__salesman {
       font-size: 10px; }
     .product-card .price {
-      font-size: 18px; }
+      font-size: 16px; }
     .product-card .sale {
       width: 30px;
       height: 30px;
@@ -4473,7 +4481,12 @@ footer {
   .list-category li {
     margin: 0 0 5px; }
   .product-wrapper__info-list:before {
-    height: 110px; } }
+    height: 110px; }
+  .products-section {
+    margin: 0 0 40px; }
+    .products-section .tabs__caption li {
+      height: 157px;
+      padding: 20px 10px 10px; } }
 
 @media only screen and (max-width: 480px) {
   .w-25 {
@@ -4522,7 +4535,9 @@ footer {
   .modal-body {
     padding: 10px 0 0; }
   .modal__wrapper {
-    padding: 30px; } }
+    padding: 30px; }
+  .product-card .btn {
+    width: 40px; } }
 
 @media only screen and (max-width: 380px) {
   .main-slider-item__bottom {
@@ -4533,11 +4548,9 @@ footer {
     font-size: 14px; } }
 
 @media only screen and (max-width: 350px) {
-  .product-card {
-    height: 320px; }
   main .btn {
     margin: 10px 0 0; }
   .product-wrapper__info-list {
     max-height: 550px; }
   .product-card .price {
-    font-size: 15px; } }
+    font-size: 14px; } }

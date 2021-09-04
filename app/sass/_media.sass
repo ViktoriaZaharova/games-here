@@ -67,14 +67,15 @@
   #modalQuestion3
     transform: translate(-50%,-55%)
 
+  .dropdown-box .scroll-vertical
+    height: 260px
+
 @media only screen and (max-width: 1450px)
   .footer-menu, .footer-menu .btn
     font-size: 16px
 
   .dropdown-box
     width: 410px
-    .scroll-vertical
-      height: 300px
 
 
 @media only screen and (max-width: 1420px)
@@ -562,15 +563,16 @@
 
 
   .dropdown-mobile
-    padding: 20px 15px
-    position: absolute
+    padding: 148px 15px 20px
+    position: fixed
     left: 0
-    top: -30px
+    top: 0
     z-index: 2
     background: #1F2023
     max-width: none
     height: 100%
     width: 100%
+    overflow-y: auto
     h2
       text-align: left
       margin: 0
@@ -804,7 +806,7 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 640px)
   .product-card
-    height: 300px
+    //height: 300px
     margin: 0 0 20px
     border-radius: 10px
     &__img
@@ -828,7 +830,7 @@
     &__salesman
       font-size: 10px
     .price
-      font-size: 18px
+      font-size: 16px
     .sale
       width: 30px
       height: 30px
@@ -1119,6 +1121,13 @@
   .product-wrapper__info-list:before
     height: 110px
 
+  .products-section
+    margin: 0 0 40px
+    .tabs__caption li
+      height: 157px
+      padding: 20px 10px 10px
+
+
 @media only screen and (max-width: 480px)
   .w-25
     width: 100%
@@ -1155,6 +1164,8 @@
     &:last-child
       margin: 0 0 20px
 
+
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
   .modal-body .col-5
@@ -1181,6 +1192,9 @@
   .modal__wrapper
     padding: 30px
 
+  .product-card .btn
+    width: 40px
+
 
 @media only screen and (max-width: 380px)
   .main-slider-item__bottom
@@ -1192,8 +1206,8 @@
     font-size: 14px
 
 @media only screen and (max-width: 350px)
-  .product-card
-    height: 320px
+  //.product-card
+  //  height: 320px
 
   main .btn
     margin: 10px 0 0
@@ -1203,4 +1217,4 @@
 
 
   .product-card .price
-    font-size: 15px
+    font-size: 14px
