@@ -1,13 +1,16 @@
 // slider
-const swiper = new Swiper('.main-slider', {
-    loop: true,
-    touchStartPreventDefault: false,
-    effect: "fade",
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
+$(document).ready(function () {
+    const swiper = new Swiper('.main-slider', {
+        loop: true,
+        touchStartPreventDefault: false,
+        effect: "fade",
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
 });
+
 
 // tabs
 $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
@@ -208,23 +211,6 @@ $('.links-close-mobile-menu').on('click', function (e) {
     $(this).parents('.mobile-menu-level').removeClass('active');
 });
 
-// preview img clicked = src max img
-// $(document).ready(function () {
-//     var penImg = $('.product-image__max img');
-//     var linksImg = $('.product-image__max a');
-//
-//     $('.product-image__min div.item').on('click', function () {
-//         $('.product-image__min div.item').removeClass('click-item');
-//         $(this).addClass('click-item');
-//         var imgPath;
-//
-//         imgPath = $(this).attr('data-img-path');
-//
-//         penImg.attr('src', imgPath);
-//         linksImg.attr('href', imgPath);
-//
-//     });
-// });
 
 // show block product text
 $('.read-more').on('click', function (e) {
